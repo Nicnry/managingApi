@@ -4,9 +4,9 @@ Lors de ce projet, nous avons besoin de l'environnement suivant afin de pouvoir 
 - Visual Studio Code v1.42.1 (x64)
 - PHP ^7.0
 - Composer v1.9.1 2019-11-01 17:20:17
-- Git v2.21.1 (Apple Git-122.3) / Git v??? (Windows Git-???-?)
+- Git v2.21.1 (Apple Git-122.3) / Git v2.24.0.windows.1
 - Credentials Google Cloud (lié à votre compte)
-- macOS Catalina v10.15.3 ou Windows 10 v???
+- macOS Catalina v10.15.3 ou Windows 10
 
 Dans le cadre du développement, nous utilisons 2 extensions vscode pour améliorer l'environnement de dev. Vous pouvez les installer en executant les commandes suivantes (macOS) :
 `code --install-extension felixfbecker.php-intellisense`
