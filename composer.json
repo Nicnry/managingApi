@@ -3,5 +3,8 @@
         "google/cloud-storage": "^1.18",
         "vlucas/phpdotenv": "^4.1",
         "google/cloud-vision": "^0.25.0"
+    },
+    "require-dev": {
+        "theseer/phpdox": "^0.12.0"
     }
 }
