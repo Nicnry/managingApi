@@ -17,13 +17,13 @@ Il aura aussi fallu lui demander de fournir un exemple en `html`.
 <build engine="html" output="html"/>
 ```
 
-Vous pouvez trouver le fichier de configuration [ici](../phpdox.xml)
+Vous pouvez trouver le fichier de configuration [ici](../phpdox.xml).
 
 ## PHPUnit
 Des tests sont requis pour répondre aux exigences du client, pour cela nous avons opté pour un outil très connu pour le PHP. 
 
 ### Installation
-Lors de l'installation, nous avons voulu suivre la documentation de PHPUnit cependant, une erreur est survenue. La version de php-timer requise pour l'installation de PHPUnit est la version 3 ou supérieur. Malheureusement, phpdox utilise la version 2.0 ou supérieur. Après avoir fait des recherches dessus, il n'y avait pas de possibilité de faire travailler ces deux programmes avec la même version de php-timer. Nous avons donc opté pour la version 8 de PHPUnit qui annonce un support jusqu'au 5 fevrier 2021, ce qui est largement suffisant pour ce projet. Vous pouvez consulter la documentation sur ce [lien](https://phpunit.de/getting-started/phpunit-8.html)
+Lors de l'installation, nous avons voulu suivre la documentation de PHPUnit cependant, une erreur est survenue. La version de php-timer requise pour l'installation de PHPUnit est la version 3 ou supérieur. Malheureusement, phpdox utilise la version 2.0 ou supérieur. Après avoir fait des recherches dessus, il n'y avait pas de possibilité de faire travailler ces deux programmes avec la même version de php-timer. Nous avons donc opté pour la version 8 de PHPUnit qui annonce un support jusqu'au 5 fevrier 2021, ce qui est largement suffisant pour ce projet. Vous pouvez consulter la documentation sur ce [lien](https://phpunit.de/getting-started/phpunit-8.html).
 
 Une fois installé, la documentation de PHPUnit explique qu'il faut créer une classe avec un suffixe `Test`. Ainsi lors de l'appel à PHPUnit, le fichier est lancé par `PHPUnit\Framework\TestCase` qui nous fournis un resultat. Nous avons donc fair un exemple présenté en cours afin d'avoir un retour standard.
 

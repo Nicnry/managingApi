@@ -18,8 +18,11 @@ Afin de faire fonctionner ce projet, merci de suivre la marche à suivre suivant
 - Vous pouvez accéder à votre application à l'adresse `127.0.0.1:9999`
 
 ## Helper
+
+Pour plus d'informations sur les points suivant et suivre notre analyse vous pouvez consulter le [document suivant](./docs/analyser.md).
+
 ### phpdox
-pour générer la doc, vous pouvez utiliser la commande `vendor/bin/phpdox` qui vou generera un dossier [phpdox](./docs/phpdox) avec tout les fichiers, une version en xml et une en xhtml, vous pouvez consulter la doc à [cette addresse](./docs/phpdox/html/html/index.xhtml)
+pour générer la doc, vous pouvez utiliser la commande `vendor/bin/phpdox` qui vou generera un dossier [phpdox](./docs/phpdox) avec tout les fichiers, une version en xml et une en xhtml, vous pouvez consulter la doc à [cette addresse](./docs/phpdox/html/html/index.xhtml),
 
 ### phpunit
 Pour executer les tests, la commande `vendor/bin/phpunit folder/FileTest.php`  lance les tests directement. En cas de problèmes, vous pouvez vous fier à la [documentation](https://phpunit.readthedocs.io/fr/latest/writing-tests-for-phpunit.html) de phpunit.
