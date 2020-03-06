@@ -8,6 +8,8 @@ Lors de ce projet, nous avons besoin de l'environnement suivant afin de pouvoir 
 - Credentials Google Cloud (lié à votre compte)
 - macOS Catalina v10.15.3 ou Windows 10
 
+`Optionnel :`
+
 Dans le cadre du développement, nous utilisons 2 extensions vscode pour améliorer l'environnement de dev. Vous pouvez les installer en executant les commandes suivantes (macOS) :
 `code --install-extension felixfbecker.php-intellisense`
 `code --install-extension bmewburn.vscode-intelephense-client`
