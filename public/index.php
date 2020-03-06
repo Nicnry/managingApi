@@ -46,10 +46,12 @@ function detect_label($path)
         print("Labels:" . PHP_EOL);
         foreach ($labels as $label) {
             print($label->getDescription() . PHP_EOL);
+            $labelJson[] = $label->serializeToJsonString();
         }
     } else {
         print('No label found' . PHP_EOL);
     }
+    echo json_encode($labelJson);
 
     $imageAnnotator->close();
 }
