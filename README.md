@@ -21,6 +21,10 @@ Afin de faire fonctionner ce projet, merci de suivre la marche à suivre suivant
 
 Pour plus d'informations sur les points suivant et suivre notre analyse vous pouvez consulter le [document suivant](./docs/analyser.md).
 
+La documentation pour l'environnement de travail est dans le [document suivant](./docs/environnement.md).
+
+La documentation pour les dépendances du serveur sont sur [ce document](./docs/dependances.md).
+
 ### phpdox
 pour générer la doc, vous pouvez utiliser la commande `vendor/bin/phpdox` qui vou generera un dossier [phpdox](./docs/phpdox) avec tout les fichiers, une version en xml et une en xhtml, vous pouvez consulter la doc à [cette addresse](./docs/phpdox/html/html/index.xhtml),
 
