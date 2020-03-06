@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="ApiManager" namespace="" name="ApiManager" abstract="false" final="false" start="3" end="17">
+  <file path="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/interface" file="ApiManager.php" realpath="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/interface/ApiManager.php" size="336" time="2020-03-06T07:56:59+00:00" unixtime="1583481419" sha1="a4973f2297e1ef2b7c3d8e747b2db6e72f75d22c" relative="interface/ApiManager.php"/>
+  <method name="auth_cloud_implicit" start="5" end="5" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="projectId" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="get_all_labels" start="13" end="13" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function will get the labels and return to json array"/>
+      <param type="object" variable="$path">
+        <type full="String" namespace="" name="String"/>
+      </param>
+      <return type="object">
+        <type full="Json" namespace="" name="Json"/>
+      </return>
+    </docblock>
+    <parameter name="path" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="upload_object" start="16" end="16" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="bucketName" byreference="false" type="{unknown}"/>
+    <parameter name="objectName" byreference="false" type="{unknown}"/>
+    <parameter name="source" byreference="false" type="{unknown}"/>
+  </method>
+</interface>
