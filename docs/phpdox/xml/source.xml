@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <source xmlns="http://xml.phpdox.net/src">
   <dir name="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi">
+    <dir name="interface">
+      <file name="ApiManager.php" size="336" time="2020-03-06T07:56:59+00:00" unixtime="1583481419" sha1="a4973f2297e1ef2b7c3d8e747b2db6e72f75d22c" xml="tokens/interface/ApiManager.php.xml"/>
+    </dir>
     <dir name="public">
-      <file name="index.php" size="1440" time="2020-02-27T14:48:25+00:00" unixtime="1582814905" sha1="0bbede994522a45477d9c4bb9520abbcdbd64289" xml="tokens/public/index.php.xml"/>
+      <file name="index.php" size="248" time="2020-03-06T07:54:41+00:00" unixtime="1583481281" sha1="569c60c484daf96ea5adb098264e4e5a053a6213" xml="tokens/public/index.php.xml"/>
     </dir>
     <dir name="model">
-      <file name="PhpunitTest.php" size="165" time="2020-03-05T10:29:02+00:00" unixtime="1583404142" sha1="a2892330204d3c03efb0dcbf21e38fe55e8d7ae4" xml="tokens/model/PhpunitTest.php.xml"/>
+      <file name="GoogleApi.php" size="1526" time="2020-03-06T07:54:54+00:00" unixtime="1583481294" sha1="304bb657255c1fe7964f398fd44a164ab365a4dc" xml="tokens/model/GoogleApi.php.xml"/>
+      <file name="PhpunitTest.php" size="173" time="2020-03-06T07:23:37+00:00" unixtime="1583479417" sha1="4fe5266f53c87e7879b2e21bf4e61d5a04f20b03" xml="tokens/model/PhpunitTest.php.xml"/>
     </dir>
   </dir>
 </source>

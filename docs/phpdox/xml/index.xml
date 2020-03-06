@@ -2,5 +2,5 @@
 <index xmlns="http://xml.phpdox.net/src" basedir="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi">
   <namespace name="">
     
-  <class name="PhpunitTest" src="model/PhpunitTest.php" xml="classes/PhpunitTest.xml"/></namespace>
+  <class name="GoogleApi" src="model/GoogleApi.php" xml="classes/GoogleApi.xml"/><class name="PhpunitTest" src="model/PhpunitTest.php" xml="classes/PhpunitTest.xml"/><interface name="ApiManager" src="interface/ApiManager.php" xml="interfaces/ApiManager.xml"/></namespace>
 </index>

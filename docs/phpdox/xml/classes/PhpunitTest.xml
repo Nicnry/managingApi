@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="PhpunitTest" namespace="" name="PhpunitTest" abstract="false" final="false" start="4" end="11">
-  <file path="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/model" file="PhpunitTest.php" realpath="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/model/PhpunitTest.php" size="165" time="2020-03-05T10:29:02+00:00" unixtime="1583404142" sha1="a2892330204d3c03efb0dcbf21e38fe55e8d7ae4" relative="model/PhpunitTest.php"/>
+  <file path="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/model" file="PhpunitTest.php" realpath="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/model/PhpunitTest.php" size="173" time="2020-03-06T07:23:37+00:00" unixtime="1583479417" sha1="4fe5266f53c87e7879b2e21bf4e61d5a04f20b03" relative="model/PhpunitTest.php"/>
   <extends full="PHPUnit\Framework\TestCase" namespace="PHPUnit\Framework" name="TestCase" unresolved="true"/>
   <method name="testPhpunit" start="6" end="10" abstract="false" final="false" static="false" visibility="public"/>
 </class>
