@@ -6,15 +6,15 @@ use Google\Cloud\Vision\V1\ImageAnnotatorClient;
 class GoogleLabelDetectorImpl implements ILabelDetector
 {
     private $labels; 
-    public function __construct(){
-
-    }
+    public function __construct(){}
 
     /**
      * This function will get the labels and return to json array
      *
      * @param String $imageUri
-     * @return Json
+     * @param Int $maxLabels
+     * @param Int $minConfidence
+     * @return Void
      */
     public function MakeAnalysisRequest($imageUri, $maxLabels = 1, $minConfidence = 80) {
         $imageAnnotator = new ImageAnnotatorClient();
@@ -30,13 +30,17 @@ class GoogleLabelDetectorImpl implements ILabelDetector
             print('No label found' . PHP_EOL);
             return false;
         }
+
         $this->labels = $labelJson;
+
         $imageAnnotator->close();
     }
 
+    /**
+     * @return String
+     */
     public function ToString() {
-        $final = json_encode($this->labels);
-        return $final;
+        return json_encode($this->labels);
     }
 
     // public function auth_cloud_implicit($projectId) {
