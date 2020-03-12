@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="GoogleApiTest" namespace="" name="GoogleApiTest" abstract="false" final="false" start="5" end="11">
-  <file path="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/model" file="GoogleApiTest.php" realpath="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/model/GoogleApiTest.php" size="205" time="2020-03-06T08:26:54+00:00" unixtime="1583483214" sha1="3a47dab265310acdc2ed06617b93f352cc5e17ea" relative="model/GoogleApiTest.php"/>
-  <extends full="PHPUnit\Framework\TestCase" namespace="PHPUnit\Framework" name="TestCase" unresolved="true"/>
-  <method name="testGetLabels" start="7" end="10" abstract="false" final="false" static="false" visibility="public"/>
-</class>

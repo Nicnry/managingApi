@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="GoogleLabelDetectorUnitTest" namespace="" name="GoogleLabelDetectorUnitTest" abstract="false" final="false" start="10" end="50">
+  <file path="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/model" file="GoogleLabelDetectorUnitTest.php" realpath="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/model/GoogleLabelDetectorUnitTest.php" size="1483" time="2020-03-12T17:02:02+00:00" unixtime="1584032522" sha1="56345ec0c0bbfa1037a3061b55bf9082a8fe911f" relative="model/GoogleLabelDetectorUnitTest.php"/>
+  <extends full="PHPUnit\Framework\TestCase" namespace="PHPUnit\Framework" name="TestCase" unresolved="true"/>
+  <method name="testMakeAnalysisLocalFileSuccess" start="31" end="44" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="given" line="33"/>
+      <comment value="when" line="37"/>
+      <comment value="then" line="40"/>
+      <comment value="compare expected json with result json" line="41"/>
+    </inline>
+  </method>
+</class>

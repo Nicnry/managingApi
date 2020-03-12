@@ -31,5 +31,5 @@
   </method>
   <implementors>
     <class full="GoogleLabelDetectorImpl" namespace="" name="GoogleLabelDetectorImpl"/>
-  </implementors>
+  <class full="GoogleLabelDetectorImpl" namespace="" name="GoogleLabelDetectorImpl"/></implementors>
 </interface>
