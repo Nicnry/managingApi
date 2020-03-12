@@ -11,12 +11,13 @@ class GoogleLabelDetectorUnitTest extends TestCase
     public function test_MakeAnalysis_Success()
     {
         //TODO: Use expected.json instead of our_expected.json, when the format will be fixed
-        $expectedJson = file_get_contents("./public/assets/our_expected.json");
+        $jsonFile = fopen("./public/assets/our_expected.json", "r");
+        $expectedJson = fgets($jsonFile);
+        fclose($jsonFile);
 
         $google = new GoogleLabelDetectorImpl();
         $google->MakeAnalysisRequest('./public/assets/saturnV.jpg');
         $actualJson = $google->ToString();
-        
-        $this->assertEquals($expectedJson, $actualJson);
+        $this->assertEqualsIgnoringCase($expectedJson, $actualJson);
     }
 }
