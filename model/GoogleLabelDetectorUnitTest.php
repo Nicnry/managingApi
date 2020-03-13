@@ -19,14 +19,8 @@ class GoogleLabelDetectorUnitTest extends TestCase
 
     protected function setUp(): void
     {
-        $this->labelDetector = new GoogleLabelDetectorImpl();
-        $this->pathToTestFolder = dirname(__DIR__, 1)."/public/assets/";
-        $this->imageName = "saturnV.jpg";
-        $this->jsonName = "our_expected.json";
-        $this->fullPathToImage = $this->pathToTestFolder.$this->imageName;
-        $this->fullPathToExpectedJson = $this->pathToTestFolder.$this->jsonName;
-        $this->maxLabels = 1;
-    }
+        //TODO: Use expected.json instead of our_expected.json, when the format will be fixed
+        $expectedJson = file_get_contents("./public/assets/our_expected.json");
 
     public function testMakeAnalysisLocalFileSuccess()
     {
