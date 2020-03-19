@@ -21,7 +21,8 @@ class GoogleLabelDetectorUnitTest extends TestCase
     {
         //TODO: Use expected.json instead of our_expected.json, when the format will be fixed
         $expectedJson = file_get_contents("./public/assets/our_expected.json");
-
+    }
+    
     public function testMakeAnalysisLocalFileSuccess()
     {
         //given
