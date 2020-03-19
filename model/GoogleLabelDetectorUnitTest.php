@@ -23,7 +23,8 @@ class GoogleLabelDetectorUnitTest extends TestCase
     protected function setUp(): void
     {
         //TODO: Use expected.json instead of our_expected.json, when the format will be fixed
-        $this->expectedJson = file_get_contents("./public/assets/our_expected.json");
+        $expectedJsonWithInvisibles = file_get_contents("./public/assets/our_expected.json");
+        $this->expectedJson = preg_replace('/\p{C}+/u', "", $expectedJsonWithInvisibles); // Remove invisible characters, they're given by file_get_contents 
         $this->labelDetector = new GoogleLabelDetectorImpl();
         $this->fullPathToImage = realpath('./public/assets/saturnV.jpg');
     }

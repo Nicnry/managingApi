@@ -31,7 +31,7 @@ class GoogleLabelDetectorImpl implements ILabelDetector
             return false;
         }
 
-        $this->labels = $labelJson;
+        $this->labels = implode($labelJson);
 
         $imageAnnotator->close();
     }
