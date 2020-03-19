@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <source xmlns="http://xml.phpdox.net/src">
-  <dir name="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi">
+  <dir name="C:/Users/junod/GitHub/managingApi">
     <dir name="interface">
-      <file name="ILabelDetector.php" size="734" time="2020-03-12T11:08:35+00:00" unixtime="1584011315" sha1="bfdb514baa48294a7bae861e792949eacac4a92d" xml="tokens/interface/ILabelDetector.php.xml"/>
-      <file name="IBucketManager.php" size="244" time="2020-03-12T10:48:24+00:00" unixtime="1584010104" sha1="7c00376a534ce162f527128bd49a377f669fe7ab" xml="tokens/interface/IBucketManager.php.xml"/>
-    </dir>
-    <dir name="public">
-      <file name="index.php" size="303" time="2020-03-12T14:42:26+00:00" unixtime="1584024146" sha1="1c9fab08b5e8cff765406dc3f66c5e606481f112" xml="tokens/public/index.php.xml"/>
+      <file name="IBucketManager.php" size="256" time="2020-03-19T11:13:07+00:00" unixtime="1584616387" sha1="be8ae2f52da94a16e4c47f5cc4a3c7ea3954f6fe" xml="tokens/interface/IBucketManager.php.xml"/>
+      <file name="ILabelDetector.php" size="765" time="2020-03-19T11:13:07+00:00" unixtime="1584616387" sha1="b3caa7b76925176abcc3157c6ad98081fa602cf8" xml="tokens/interface/ILabelDetector.php.xml"/>
     </dir>
     <dir name="model">
-      <file name="PhpunitTest.php" size="173" time="2020-03-06T07:23:37+00:00" unixtime="1583479417" sha1="4fe5266f53c87e7879b2e21bf4e61d5a04f20b03" xml="tokens/model/PhpunitTest.php.xml"/>
-      <file name="GoogleLabelDetectorImpl.php" size="1310" time="2020-03-12T14:42:26+00:00" unixtime="1584024146" sha1="ec44969414f7bd27adf71aabb037673f04163edf" xml="tokens/model/GoogleLabelDetectorImpl.php.xml"/>
-      <file name="GoogleLabelDetectorUnitTest.php" size="1483" time="2020-03-12T17:02:02+00:00" unixtime="1584032522" sha1="56345ec0c0bbfa1037a3061b55bf9082a8fe911f" xml="tokens/model/GoogleLabelDetectorUnitTest.php.xml"/>
+      <file name="GoogleLabelDetectorImpl.php" size="1367" time="2020-03-19T12:35:35+00:00" unixtime="1584621335" sha1="e47a126552466359da6ba699926152a5ee50caaf" xml="tokens/model/GoogleLabelDetectorImpl.php.xml"/>
+      <file name="GoogleLabelDetectorUnitTest.php" size="2967" time="2020-03-19T13:49:38+00:00" unixtime="1584625778" sha1="272e3f520148240200fc437b2295d1d859fec450" xml="tokens/model/GoogleLabelDetectorUnitTest.php.xml"/>
+    </dir>
+    <dir name="public">
+      <file name="index.php" size="313" time="2020-03-19T12:35:46+00:00" unixtime="1584621346" sha1="212715011c234c8d033e092336891fdd8c4b2984" xml="tokens/public/index.php.xml"/>
     </dir>
   </dir>
 </source>

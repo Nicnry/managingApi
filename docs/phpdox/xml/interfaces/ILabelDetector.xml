@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface xmlns="http://xml.phpdox.net/src" full="ILabelDetector" namespace="" name="ILabelDetector" abstract="false" final="false" start="3" end="32">
-  <file path="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/interface" file="ILabelDetector.php" realpath="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/interface/ILabelDetector.php" size="734" time="2020-03-12T11:08:35+00:00" unixtime="1584011315" sha1="bfdb514baa48294a7bae861e792949eacac4a92d" relative="interface/ILabelDetector.php"/>
+  <file path="C:/Users/junod/GitHub/managingApi/interface" file="ILabelDetector.php" realpath="C:/Users/junod/GitHub/managingApi/interface/ILabelDetector.php" size="765" time="2020-03-19T11:13:07+00:00" unixtime="1584616387" sha1="b3caa7b76925176abcc3157c6ad98081fa602cf8" relative="interface/ILabelDetector.php"/>
   <method name="MakeAnalysisRequest" start="14" end="14" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="This function will get the labels and return to json array"/>
@@ -31,5 +31,5 @@
   </method>
   <implementors>
     <class full="GoogleLabelDetectorImpl" namespace="" name="GoogleLabelDetectorImpl"/>
-  <class full="GoogleLabelDetectorImpl" namespace="" name="GoogleLabelDetectorImpl"/></implementors>
+  </implementors>
 </interface>

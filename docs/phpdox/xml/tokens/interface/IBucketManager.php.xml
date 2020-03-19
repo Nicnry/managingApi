@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/interface" file="IBucketManager.php" realpath="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/interface/IBucketManager.php" size="244" time="2020-03-12T10:48:24+00:00" unixtime="1584010104" sha1="7c00376a534ce162f527128bd49a377f669fe7ab" relative="interface/IBucketManager.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="C:/Users/junod/GitHub/managingApi/interface" file="IBucketManager.php" realpath="C:/Users/junod/GitHub/managingApi/interface/IBucketManager.php" size="256" time="2020-03-19T11:13:07+00:00" unixtime="1584616387" sha1="be8ae2f52da94a16e4c47f5cc4a3c7ea3954f6fe" relative="interface/IBucketManager.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
