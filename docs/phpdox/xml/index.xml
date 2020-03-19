@@ -2,5 +2,5 @@
 <index xmlns="http://xml.phpdox.net/src" basedir="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi">
   <namespace name="">
     
-  <class name="PhpunitTest" src="model/PhpunitTest.php" xml="classes/PhpunitTest.xml"/><interface name="ILabelDetector" src="interface/ILabelDetector.php" xml="interfaces/ILabelDetector.xml"/><interface name="IBucketManager" src="interface/IBucketManager.php" xml="interfaces/IBucketManager.xml"/><class name="GoogleLabelDetectorImpl" src="model/GoogleLabelDetectorImpl.php" xml="classes/GoogleLabelDetectorImpl.xml"/><class name="GoogleLabelDetectorUnitTest" src="model/GoogleLabelDetectorUnitTest.php" xml="classes/GoogleLabelDetectorUnitTest.xml"/></namespace>
+  <class name="PhpunitTest" src="model/PhpunitTest.php" xml="classes/PhpunitTest.xml"/><interface name="IBucketManager" src="interface/IBucketManager.php" xml="interfaces/IBucketManager.xml"/><interface name="ILabelDetector" src="interface/ILabelDetector.php" xml="interfaces/ILabelDetector.xml"/><class name="GoogleLabelDetectorImpl" src="model/GoogleLabelDetectorImpl.php" xml="classes/GoogleLabelDetectorImpl.xml"/><class name="GoogleLabelDetectorUnitTest" src="model/GoogleLabelDetectorUnitTest.php" description="This test class is designed to confirm the LabelDetector class's behavior" xml="classes/GoogleLabelDetectorUnitTest.xml"/></namespace>
 </index>

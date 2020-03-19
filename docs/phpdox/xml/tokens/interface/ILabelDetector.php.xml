@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/interface" file="ILabelDetector.php" realpath="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/interface/ILabelDetector.php" size="734" time="2020-03-12T11:08:35+00:00" unixtime="1584011315" sha1="bfdb514baa48294a7bae861e792949eacac4a92d" relative="interface/ILabelDetector.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="C:/Users/junod/GitHub/managingApi/interface" file="ILabelDetector.php" realpath="C:/Users/junod/GitHub/managingApi/interface/ILabelDetector.php" size="765" time="2020-03-19T11:13:07+00:00" unixtime="1584616387" sha1="b3caa7b76925176abcc3157c6ad98081fa602cf8" relative="interface/ILabelDetector.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>

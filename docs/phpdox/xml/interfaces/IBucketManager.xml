@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface xmlns="http://xml.phpdox.net/src" full="IBucketManager" namespace="" name="IBucketManager" abstract="false" final="false" start="3" end="13">
-  <file path="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/interface" file="IBucketManager.php" realpath="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/interface/IBucketManager.php" size="244" time="2020-03-12T10:48:24+00:00" unixtime="1584010104" sha1="7c00376a534ce162f527128bd49a377f669fe7ab" relative="interface/IBucketManager.php"/>
+  <file path="C:/Users/junod/GitHub/managingApi/interface" file="IBucketManager.php" realpath="C:/Users/junod/GitHub/managingApi/interface/IBucketManager.php" size="256" time="2020-03-19T11:13:07+00:00" unixtime="1584616387" sha1="be8ae2f52da94a16e4c47f5cc4a3c7ea3954f6fe" relative="interface/IBucketManager.php"/>
   <method name="CreateObject" start="6" end="6" abstract="false" final="false" static="false" visibility="public">
     <parameter name="objectUrl" byreference="false" type="{unknown}"/>
   </method>

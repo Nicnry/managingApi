@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/public" file="index.php" realpath="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/public/index.php" size="303" time="2020-03-12T14:42:26+00:00" unixtime="1584024146" sha1="1c9fab08b5e8cff765406dc3f66c5e606481f112" relative="public/index.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="C:/Users/junod/GitHub/managingApi/public" file="index.php" realpath="C:/Users/junod/GitHub/managingApi/public/index.php" size="313" time="2020-03-19T12:35:46+00:00" unixtime="1584621346" sha1="212715011c234c8d033e092336891fdd8c4b2984" relative="public/index.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>

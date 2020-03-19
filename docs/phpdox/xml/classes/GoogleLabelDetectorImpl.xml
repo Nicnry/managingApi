@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class xmlns="http://xml.phpdox.net/src" full="GoogleLabelDetectorImpl" namespace="" name="GoogleLabelDetectorImpl" abstract="false" final="false" start="6" end="49">
-  <file path="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/model" file="GoogleLabelDetectorImpl.php" realpath="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/model/GoogleLabelDetectorImpl.php" size="1310" time="2020-03-12T14:42:26+00:00" unixtime="1584024146" sha1="ec44969414f7bd27adf71aabb037673f04163edf" relative="model/GoogleLabelDetectorImpl.php"/>
+  <file path="C:/Users/junod/GitHub/managingApi/model" file="GoogleLabelDetectorImpl.php" realpath="C:/Users/junod/GitHub/managingApi/model/GoogleLabelDetectorImpl.php" size="1367" time="2020-03-19T12:35:35+00:00" unixtime="1584621335" sha1="e47a126552466359da6ba699926152a5ee50caaf" relative="model/GoogleLabelDetectorImpl.php"/>
   <implements full="ILabelDetector" namespace="" name="ILabelDetector"/>
   <constructor name="__construct" start="9" end="9" abstract="false" final="false" static="false" visibility="public"/>
   <method name="MakeAnalysisRequest" start="19" end="37" abstract="false" final="false" static="false" visibility="public">
@@ -33,32 +33,32 @@
   </method>
   <interface full="ILabelDetector" namespace="" name="ILabelDetector">
     <method name="MakeAnalysisRequest" start="14" end="14" abstract="false" final="false" static="false" visibility="public">
-    <docblock>
-      <description compact="This function will get the labels and return to json array"/>
-      <param type="object" variable="$imageUri">
-        <type full="String" namespace="" name="String"/>
-      </param>
-      <param type="object" variable="$maxLabels">
-        <type full="Int" namespace="" name="Int"/>
-      </param>
-      <param type="object" variable="$minConfidence">
-        <type full="Int" namespace="" name="Int"/>
-      </param>
-      <return type="object">
-        <type full="Void" namespace="" name="Void"/>
-      </return>
-    </docblock>
-    <parameter name="imageUri" byreference="false" type="{unknown}"/>
-    <parameter name="maxLabels" byreference="false" type="integer" default="1"/>
-    <parameter name="minConfidence" byreference="false" type="integer" default="80"/>
-  </method>
+      <docblock>
+        <description compact="This function will get the labels and return to json array"/>
+        <param type="object" variable="$imageUri">
+          <type full="String" namespace="" name="String"/>
+        </param>
+        <param type="object" variable="$maxLabels">
+          <type full="Int" namespace="" name="Int"/>
+        </param>
+        <param type="object" variable="$minConfidence">
+          <type full="Int" namespace="" name="Int"/>
+        </param>
+        <return type="object">
+          <type full="Void" namespace="" name="Void"/>
+        </return>
+      </docblock>
+      <parameter name="imageUri" byreference="false" type="{unknown}"/>
+      <parameter name="maxLabels" byreference="false" type="integer" default="1"/>
+      <parameter name="minConfidence" byreference="false" type="integer" default="80"/>
+    </method>
     <method name="ToString" start="19" end="19" abstract="false" final="false" static="false" visibility="public">
-    <docblock>
-      <description/>
-      <return type="object">
-        <type full="String" namespace="" name="String"/>
-      </return>
-    </docblock>
-  </method>
+      <docblock>
+        <description/>
+        <return type="object">
+          <type full="String" namespace="" name="String"/>
+        </return>
+      </docblock>
+    </method>
   </interface>
 </class>
