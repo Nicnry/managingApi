@@ -42,9 +42,8 @@ class GoogleBucketManagerImpl implements IBucketManager
         foreach($buckets as $bucket) {
             if($bucket->name() == $this->bucketUrl) {
                 if($bucket->name() != $objectUrl) {
-                    foreach($bucket->object([$this->bucketUrl]) as $storageObject) {
-                        $objectName = $objectUrl->str_replace($this->bucketUrl . "/", "");
-                        if($storageObject->name() == $objectName) {
+                    foreach($bucket->objects() as $storageObject) {
+                        if($storageObject->name() == $objectUrl) {
                             return true;
                         }
                     }
