@@ -156,6 +156,19 @@ class GoogleBucketManagerImplTest extends TestCase
      */
     protected function tearDown(): void
     {
+        //TODO remove all dev bucket
+        $destinationFullPath = $this->pathToTestFolder + "//" + $this->prefixObjectDownloaded + "*";
 
+        if (file_exists($destinationFullPath))
+        {
+            unlink($destinationFullPath);
+        }
+
+        $this->bucketManager = new GoogleBucketManagerImpl($this->bucketUrl);
+        if ($this->bucketManager->IsObjectExists($this->bucketUrl))
+        {
+            /* await syntax, to check */
+            $this->bucketManager->RemoveObject($this->bucketUrl);
+        }
     }
 }
