@@ -14,9 +14,9 @@ echo $google->ToString();
 
 // Connect to the bucket
 $projectId = getenv('PROJECT_ID');
-$domain = 'pictures';
+$domain = 'actualit.info';
 $bucketName = 'bucket_ajd_nhy';
 
 $bucket = new GoogleBucketManagerImpl($projectId, $domain, $bucketName);
-echo $bucket->IsObjectExists("bucket_ajd_nhy");
 // echo $bucket->CreateObject("abc");
+var_dump($bucket->IsObjectExists("abcd.jpg"));
