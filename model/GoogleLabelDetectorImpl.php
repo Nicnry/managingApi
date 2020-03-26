@@ -1,11 +1,17 @@
 <?php
 require __DIR__.'/../interface/ILabelDetector.php';
-use Google\Cloud\Storage\StorageClient;
 use Google\Cloud\Vision\V1\ImageAnnotatorClient;
 
+/**
+ * This class is designed to manage an instance of GoogleLabelDetector
+ */
 class GoogleLabelDetectorImpl implements ILabelDetector
 {
     private $labels; 
+
+    /**
+     * This constructor returns a new GoogleLabelDector's instance
+     */
     public function __construct(){}
 
     /**
