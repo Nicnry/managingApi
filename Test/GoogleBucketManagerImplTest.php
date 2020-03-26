@@ -30,7 +30,8 @@ class GoogleBucketManagerImplTest extends TestCase
         $this->bucketName = "bucket_ajd_nhy";
         $this->domain = "actualit.info";
         $this->bucketUrl = $this->bucketName . "." . $this->domain;
-        $this->fullPathToImage = realpath('./public/assets/saturnV.jpg');
+        $this->imageName = "abcd.jpg";
+        $this->fullPathToImage = realpath('./public/assets/' . $this->imageName);
         $this->prefixObjectDownloaded = "downloaded";
         $this->bucketManager = new GoogleBucketManagerImpl($this->projectId, $this->domain, $this->bucketName);
     }
@@ -103,13 +104,13 @@ class GoogleBucketManagerImplTest extends TestCase
      */
     public function testIsObjectExistsNominalCaseSuccess()
     {
-        // given
-        $t = $this->bucketManager->CreateObject($this->bucketUrl);
-        /* Async */
-        $t;
+        // // given
+        // $t = $this->bucketManager->CreateObject($this->fullPathToImage);
+        // /* Async */
+        // $t;
 
         //when
-        $actualResult = $this->bucketManager->IsObjectExists('abcd.jpg');
+        $actualResult = $this->bucketManager->IsObjectExists($this->imageName);
 
         //then
         $this->assertTrue($actualResult);
