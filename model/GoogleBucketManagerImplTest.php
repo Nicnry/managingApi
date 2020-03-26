@@ -33,14 +33,14 @@ class GoogleBucketManagerImplTest extends TestCase
     public function testCreateObjectCreateNewBucketSuccess()
     {
         //given
-        $this->Assert.IsFalse($this->bucketManager->IsObjectExists($this->bucketUrl));
+        $this->assertFalse($this->bucketManager->IsObjectExists($this->bucketUrl));
 
         //when
         /* Asynch, à check */
         $this->bucketManager->CreateObject($this->bucketUrl);
 
         //then
-        $this->Assert.IsTrue($this->bucketManager->sObjectExists($this->bucketUrl));
+        $this->assertTrue($this->bucketManager->sObjectExists($this->bucketUrl));
     }
 
     public function testCreateObjectCreateNewFileSuccess()
@@ -50,15 +50,15 @@ class GoogleBucketManagerImplTest extends TestCase
         $objectUrl = $this->bucketUrl + "/" + $this->imageName;
         /* Async */
         $this->bucketManager->CreateObject($this->bucketUrl);
-        $this->Assert->IsTrue($this->bucketManager->IsObjectExists($this->bucketUrl));
-        $this->Assert->IsFalse($this->bucketManager->IsObjectExists($objectUrl));
+        $this->assertTrue($this->bucketManager->IsObjectExists($this->bucketUrl));
+        $this->assertFalse($this->bucketManager->IsObjectExists($objectUrl));
 
         //when
         /* Async */
         $this->bucketManager->CreateObject($objectUrl, $this->pathToTestFolder + "//" + $fileName);
 
         //then
-        $this->Assert->IsTrue($this->bucketManager->IsObjectExists($objectUrl));
+        $this->assertTrue($this->bucketManager->IsObjectExists($objectUrl));
     }
 
     public function testDownloadObjectNominalCaseSuccess()
@@ -73,13 +73,13 @@ class GoogleBucketManagerImplTest extends TestCase
         /* Async */
         $this->bucketManager->CreateObject($objectUrl, $this->pathToTestFolder + "//" + $fileName);
 
-        $this->Assert->IsTrue($this->bucketManager->IsObjectExists($bucketUrl));
+        $this->assertTrue($this->bucketManager->IsObjectExists($bucketUrl));
 
         //when
         $this->bucketManager->DownloadObject($fileOnBucketUrl, $destinationFullPath);
 
         //then
-        $this->Assert->IsTrue(file_exists($destinationFullPath));
+        $this->assertTrue(file_exists($destinationFullPath));
     }
 
     public function testIsObjectExistsNominalCaseSuccess()
@@ -93,7 +93,7 @@ class GoogleBucketManagerImplTest extends TestCase
         $actualResult = $this->bucketManager->IsObjectExists($this->bucketUrl);
 
         //then
-        $this->Assert->IsTrue($actualResult);
+        $this->assertTrue($actualResult);
     }
 
     public function testIsObjectExistsObjectNotExistBucketSuccess()
@@ -111,13 +111,13 @@ class GoogleBucketManagerImplTest extends TestCase
         //given
         /* Async */
         $this->bucketManager->CreateObject($this->bucketUrl);
-        $this->Assert.IsTrue($this->bucketManager->IsObjectExists($this->bucketUrl));
+        $this->assertTrue($this->bucketManager->IsObjectExists($this->bucketUrl));
 
         //when
         $this->bucketManager->RemoveObject($this->bucketUrl);
 
         //then
-        $this->Assert.IsFalse($this->bucketManager->IsObjectExists($this->bucketUrl));
+        $this->assertFalse($this->bucketManager->IsObjectExists($this->bucketUrl));
     }
 
     protected function tearDown(): void
