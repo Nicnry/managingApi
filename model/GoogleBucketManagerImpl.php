@@ -40,11 +40,11 @@ class GoogleBucketManagerImpl implements IBucketManager
     public function IsObjectExists($objectUrl) {
         $buckets = $this->client->buckets([$this->projectId]);
         foreach($buckets as $bucket) {
-            if($bucket->name == $this->bucketUrl){
+            if($bucket->name() == $this->bucketUrl){
                 if($buckets->name != $objectUrl){
                     foreach($this->buckets->object($this->bucketUrl, "") as $storageObject){
                         $objectName = $objectUrl->str_replace($this->bucketUrl . "/", "");
-                        if($storageObject->name == $objectName){
+                        if($storageObject->name() == $objectName){
                             return true;
                         }
                     }
