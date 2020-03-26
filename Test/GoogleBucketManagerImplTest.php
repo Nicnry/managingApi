@@ -29,9 +29,9 @@ class GoogleBucketManagerImplTest extends TestCase
         $this->pathToTestFolder = file_get_contents("\\bin\\Debug", "\\testData");
         $this->bucketName = "testbucket";
         $this->domain = "gogle->dev->actualit->info";
-        $this->bucketUrl = $this->bucketName + "." + $this->domain;
+        $this->bucketUrl = $this->bucketName . "." . $this->domain;
         $this->imageName = "saturnV->jpg";
-        $this->fullPathToImage = $this->pathToTestFolder + "\\" + $this->imageName;
+        $this->fullPathToImage = $this->pathToTestFolder . "\\" . $this->imageName;
         $this->prefixObjectDownloaded = "downloaded";
         $this->bucketManager = new GoogleBucketManagerImpl($this->bucketUrl);
     }
@@ -61,7 +61,7 @@ class GoogleBucketManagerImplTest extends TestCase
     {
         //given
         $fileName = $this->imageName;
-        $objectUrl = $this->bucketUrl + "/" + $this->imageName;
+        $objectUrl = $this->bucketUrl . "/" . $this->imageName;
         /* Async */
         $this->bucketManager->CreateObject($this->bucketUrl);
         $this->assertTrue($this->bucketManager->IsObjectExists($this->bucketUrl));
@@ -69,7 +69,7 @@ class GoogleBucketManagerImplTest extends TestCase
 
         //when
         /* Async */
-        $this->bucketManager->CreateObject($objectUrl, $this->pathToTestFolder + "//" + $fileName);
+        $this->bucketManager->CreateObject($objectUrl, $this->pathToTestFolder . "//" . $fileName);
 
         //then
         $this->assertTrue($this->bucketManager->IsObjectExists($objectUrl));
@@ -82,13 +82,13 @@ class GoogleBucketManagerImplTest extends TestCase
     {
         //given
         $bucketName = "testBucket";
-        $bucketUrl = $bucketName + "." + $this->domain;
+        $bucketUrl = $bucketName . "." . $this->domain;
         $fileName = $this->imageName;
-        $objectUrl = $bucketUrl + "/" + $this->imageName;
-        $fileOnBucketUrl = $bucketUrl + "//" + $this->imageName;
-        $destinationFullPath = $this->pathToTestFolder + "//" + $this->prefixObjectDownloaded + $this->imageName;
+        $objectUrl = $bucketUrl . "/" . $this->imageName;
+        $fileOnBucketUrl = $bucketUrl . "//" . $this->imageName;
+        $destinationFullPath = $this->pathToTestFolder . "//" . $this->prefixObjectDownloaded . $this->imageName;
         /* Async */
-        $this->bucketManager->CreateObject($objectUrl, $this->pathToTestFolder + "//" + $fileName);
+        $this->bucketManager->CreateObject($objectUrl, $this->pathToTestFolder . "//" . $fileName);
 
         $this->assertTrue($this->bucketManager->IsObjectExists($bucketUrl));
 
@@ -157,7 +157,7 @@ class GoogleBucketManagerImplTest extends TestCase
     protected function tearDown(): void
     {
         //TODO remove all dev bucket
-        $destinationFullPath = $this->pathToTestFolder + "//" + $this->prefixObjectDownloaded + "*";
+        $destinationFullPath = $this->pathToTestFolder . "//" . $this->prefixObjectDownloaded . "*";
 
         if (file_exists($destinationFullPath))
         {

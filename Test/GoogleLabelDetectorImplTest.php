@@ -65,7 +65,7 @@ class GoogleLabelDetectorImplTest extends TestCase
         $actualJson = "";
         $expectedJsonWithInvisibles = file_get_contents($this->fullPathToExpectedJson);
         $expectedJson = preg_replace('/\p{C}+/u', "", $expectedJsonWithInvisibles); // Remove invisible characters, they're given by file_get_contents 
-        $this->imageUri = $this->bucketUrl + "/" + $this->imageName;
+        $this->imageUri = $this->bucketUrl . "/" . $this->imageName;
         
         //when
         $this->labelDetector->MakeAnalysisRequest($this->imageUri);
