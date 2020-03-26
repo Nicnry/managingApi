@@ -10,7 +10,7 @@ $dotenv->load();
 /**
  * This test class is designed to confirm the LabelDetector class's behavior
  */
-class GoogleLabelDetectorUnitTest extends TestCase
+class GoogleLabelDetectorImplTest extends TestCase
 {
     private $labelDetector;
     private $fullPathToImage;

@@ -49,4 +49,8 @@ class GoogleBucketManagerImpl implements IBucketManager
     public function RemoveObject($objectUrl) {
         
     }
+
+    private function CreateBucket($bucketName) {
+        
+    }
 }
