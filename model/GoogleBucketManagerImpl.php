@@ -8,30 +8,29 @@ use Google\Cloud\Storage\StorageClient;
 class GoogleBucketManagerImpl implements IBucketManager
 {
     private $client;
+    private $projectId;
+    private $domain;
+    private $bucketName;
     private $bucketUrl;
 
     /**
      * This constructor returns a new instance of GoogleBucketManagerImpl class
+     *
+     * @param [String] $bucketName Url pointing on a bucket
      */
-    public function __construct($bucketUrl){
-        $this->bucketUrl = $bucketUrl;
-        $config = ['projectId' => getenv('PROJECT_ID')];
-        $this->client = new StorageClient($config);
+    public function __construct($projectId, $domain, $bucketName){
+
+        $credentialsPath = realpath(getenv('GOOGLE_APPLICATION_CREDENTIALS')); // Gives the real path to the credentials file stored in .env
+        $credentials = [file_get_contents($credentialsPath)];
+        $this->projectId = $projectId;
+        $this->domain = $domain;
+        $this->bucketName = $bucketName;
+        $this->bucketUrl = $this->bucketName . "." . $this->domain;
+        $this->client = new StorageClient($credentials);
     }
 
-    /* function upload_object($bucketName, $objectName, $source)
-    {
-        $storage = new StorageClient();
-        $file = fopen($source, 'r');
-        $bucket = $storage->bucket($bucketName);
-        $object = $bucket->upload($file, [
-            'name' => $objectName
-        ]);
-        printf('Uploaded %s to gs://%s/%s' . PHP_EOL, basename($source), $bucketName, $objectName);
-    }*/
-
     public function CreateObject($objectUrl) {
-        $bucket = $this->client->bucket("abc-bucket");
+        $bucket = $this->client->bucket($this->projectId);
         $file = 'public/assets/saturnV.jpg';
         $object = $bucket->upload($file, [
             'name' => "abc-file"
@@ -39,7 +38,24 @@ class GoogleBucketManagerImpl implements IBucketManager
     }
 
     public function IsObjectExists($objectUrl) {
-
+        $buckets = $this->client->buckets([$this->projectId]);
+        foreach($buckets as $bucket) {
+            if($bucket->name == $this->bucketUrl){
+                if($buckets->name != $objectUrl){
+                    foreach($this->buckets->object($this->bucketUrl, "") as $storageObject){
+                        $objectName = $objectUrl->str_replace($this->bucketUrl . "/", "");
+                        if($storageObject->name == $objectName){
+                            return true;
+                        }
+                    }
+                }
+                else 
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     public function DownloadObject($objectUrl, $destinationUri) {
