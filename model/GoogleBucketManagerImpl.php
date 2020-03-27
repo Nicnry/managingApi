@@ -19,7 +19,6 @@ class GoogleBucketManagerImpl implements IBucketManager
      * @param [String] $bucketName Url pointing on a bucket
      */
     public function __construct($projectId, $domain, $bucketName){
-
         $credentialsPath = realpath(getenv('GOOGLE_APPLICATION_CREDENTIALS')); // Gives the real path to the credentials file stored in .env
         $credentials = [file_get_contents($credentialsPath)];
         $this->projectId = $projectId;
@@ -29,12 +28,23 @@ class GoogleBucketManagerImpl implements IBucketManager
         $this->client = new StorageClient($credentials);
     }
 
-    public function CreateObject($objectUrl) {
-        $bucket = $this->client->bucket($this->projectId);
-        $file = 'public/assets/saturnV.jpg';
-        $object = $bucket->upload($file, [
-            'name' => "abc-file"
-        ]);
+    public function CreateObject($objectUrl, $filePath = "") {
+        $isBucketExists = $this->IsObjectExists($this->bucketUrl);
+        if(!$isBucketExists)
+        {
+            $bucket = $this->client->bucket($this->bucketUrl);
+        }
+        else // Select the bucket if already exists
+        {
+            $bucket = $this->GetBucket();
+        }
+
+        if($objectUrl != $this->bucketUrl)
+        {
+            $bucket->upload($filePath, [
+                'name' => $objectUrl
+            ]);
+        }
     }
 
     public function IsObjectExists($objectUrl) {
@@ -58,14 +68,25 @@ class GoogleBucketManagerImpl implements IBucketManager
     }
 
     public function DownloadObject($objectUrl, $destinationUri) {
-
+        $object = $this->GetBucket()->object($objectUrl);
+        $object->DownloadToFile($destinationUri);
     }
 
     public function RemoveObject($objectUrl) {
-        
+        $object = $this->GetBucket()->object($objectUrl);
+        $object->delete();
     }
 
-    private function CreateBucket($bucketName) {
-        
+    /**
+     * Returns the initialized bucket
+     *
+     * @return Bucket
+     */
+    private function GetBucket() {
+        foreach($this->client->buckets([$this->projectId]) as $bucket) {
+            if($bucket->name() == $this->bucketUrl) {
+                return $bucket;
+            }
+        }
     }
 }

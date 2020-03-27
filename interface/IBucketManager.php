@@ -3,7 +3,7 @@
 interface IBucketManager
 {
 
-    public function CreateObject($objectUrl);
+    public function CreateObject($objectUrl, $filePath = "");
 
     public function IsObjectExists($objectUrl);
 

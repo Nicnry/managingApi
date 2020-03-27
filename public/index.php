@@ -16,7 +16,12 @@ echo $google->ToString();
 $projectId = getenv('PROJECT_ID');
 $domain = 'actualit.info';
 $bucketName = 'bucket_ajd_nhy';
+$objectUrl = "Loutre.jpg";
+$filePath = realpath("./assets/saturnV.jpg");
+$destinationUri = realpath("./assets") . "/" . "uploadedfile.jpg";
 
 $bucket = new GoogleBucketManagerImpl($projectId, $domain, $bucketName);
-// echo $bucket->CreateObject("abc");
-var_dump($bucket->IsObjectExists("abcd.jpg"));
+// echo $bucket->CreateObject($objectUrl, $filePath);
+// var_dump($bucket->IsObjectExists("Loutre.jpg"));
+// $bucket->DownloadObject($objectUrl, $destinationUri);
+// $bucket->RemoveObject('Loutre.jpg');
