@@ -24,12 +24,12 @@ $bucket = new GoogleBucketManagerImpl($projectId, $domain, $bucketName);
 
 // Bucket
 // echo $bucket->CreateObject($bucketName);
-// var_dump($bucket->IsObjectExists($bucketName));
-$bucket->RemoveObject($bucketName);
+// var_dump($bucket->IsObjectExists("picture_ajd_nhy.jpg"));
+// $bucket->RemoveObject($bucketName);
 
 
 // File
-// echo $bucket->CreateObject($objectUrl, $filePath);
-// var_dump($bucket->IsObjectExists("$objectUrl"));
+echo $bucket->CreateObject($objectUrl, $filePath);
+var_dump($bucket->IsObjectExists($objectUrl));
 // $bucket->DownloadObject($objectUrl, $destinationUri);
-// $bucket->RemoveObject('Loutre.jpg');
+// $bucket->RemoveObject($objectUrl);
