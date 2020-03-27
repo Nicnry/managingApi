@@ -1,7 +1,9 @@
 <?php
+namespace App\Model;
+
 require __DIR__.'/../interface/ILabelDetector.php';
 use Google\Cloud\Vision\V1\ImageAnnotatorClient;
-
+use App\Inteface\ILabelDetector;
 /**
  * This class is designed to manage an instance of GoogleLabelDetector
  */

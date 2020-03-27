@@ -1,6 +1,9 @@
 <?php
+namespace App\Model;
+
 require __DIR__.'/../interface/IBucketManager.php';
 use Google\Cloud\Storage\StorageClient;
+use App\Inteface\IBucketManager;
 
 /**
  * This class is designed to manage an instance of GoogleBucketManager

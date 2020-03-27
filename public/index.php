@@ -1,5 +1,8 @@
 <?php
 
+use App\Model\GoogleBucketManagerImpl;
+use App\Model\GoogleLabelDetectorImpl;
+
 require __DIR__.'/../vendor/autoload.php';
 require __DIR__.'/../model/GoogleLabelDetectorImpl.php';
 require __DIR__.'/../model/GoogleBucketManagerImpl.php';

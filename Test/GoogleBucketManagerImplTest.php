@@ -1,6 +1,9 @@
 <?php
-use PHPUnit\Framework\TestCase;
+namespace App\Test;
 
+use App\Model\GoogleBucketManagerImpl;
+use PHPUnit\Framework\TestCase;
+use Dotenv;
 
 require __DIR__ . '/../vendor/autoload.php';
 require __DIR__.'/../model/GoogleBucketManagerImpl.php';
