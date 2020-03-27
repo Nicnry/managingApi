@@ -2,7 +2,7 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <title>phpDox - IBucketManager::CreateObject</title>
+    <title>phpDox - GoogleBucketManagerImpl::__construct</title>
     <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
   </head>
@@ -42,9 +42,9 @@
             <a href="../../classes.xhtml#"/>
           </li>
           <li class="separator">
-            <a title="IBucketManager" href="../../interfaces/IBucketManager.xhtml">IBucketManager</a>
+            <a title="GoogleBucketManagerImpl" href="../../classes/GoogleBucketManagerImpl.xhtml">GoogleBucketManagerImpl</a>
           </li>
-          <li class="separator">CreateObject</li>
+          <li class="separator">__construct</li>
         </ul>
       </div>
       <nav class="box">
@@ -59,42 +59,39 @@
             <a href="#parameter">Parameter</a>
           </li>
           <li>
-            <a href="#return">Return</a>
-          </li>
-          <li>
-            <a href="../../source/interface/IBucketManager.php.xhtml#line13">Source</a>
+            <a href="../../source/model/GoogleBucketManagerImpl.php.xhtml#line23">Source</a>
           </li>
         </ul>
       </nav>
       <section>
-        <h1><small>IBucketManager::</small>CreateObject</h1>
-        <h4>This function will Create an object in specific bucket or create the bucket</h4>
+        <h1><small>GoogleBucketManagerImpl::</small>__construct</h1>
+        <h4>This constructor returns a new instance of GoogleBucketManagerImpl class</h4>
         <p/>
         <ul/>
         <h2 id="signature">Signature</h2>
         <div class="styled synopsis">
-          <code>public function CreateObject(<a title="String" href="../../interfaces/String.xhtml">String</a>
-        $objectUrl,
-            [string
-        $filePath = ""] )
+          <code>public function __construct(<a title="String" href="../../classes/String.xhtml">String</a>
+        $projectId,
+            <a title="String" href="../../classes/String.xhtml">String</a>
+        $domain,
+            <a title="String" href="../../classes/String.xhtml">String</a>
+        $bucketName )
             </code>
         </div>
         <h2 id="parameterlist">Parameters</h2>
         <dl class="styled">
-          <dt><code>$objectUrl</code>
+          <dt><code>$projectId</code>
                 —
                 object</dt>
           <dd><br/><br/><br/>      </dd>
-          <dt><code>$filePath</code>
+          <dt><code>$domain</code>
                 —
-                string</dt>
-          <dd>default : empty<br/><br/><br/>      </dd>
-        </dl>
-        <h2 id="return">Returns</h2>
-        <dl class="styled">
-          <dt>Void</dt>
-          <dd><br/>
-        </dd>
+                object</dt>
+          <dd>Url pointing on a bucket<br/><br/><br/>      </dd>
+          <dt><code>$bucketName</code>
+                —
+                object</dt>
+          <dd>name.info<br/><br/><br/>      </dd>
         </dl>
       </section>
     </div>

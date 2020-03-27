@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class xmlns="http://xml.phpdox.net/src" full="GoogleLabelDetectorImpl" namespace="" name="GoogleLabelDetectorImpl" abstract="false" final="false" start="6" end="49">
-  <file path="C:/Users/junod/GitHub/managingApi/model" file="GoogleLabelDetectorImpl.php" realpath="C:/Users/junod/GitHub/managingApi/model/GoogleLabelDetectorImpl.php" size="1367" time="2020-03-19T12:35:35+00:00" unixtime="1584621335" sha1="e47a126552466359da6ba699926152a5ee50caaf" relative="model/GoogleLabelDetectorImpl.php"/>
+<class xmlns="http://xml.phpdox.net/src" full="GoogleLabelDetectorImpl" namespace="" name="GoogleLabelDetectorImpl" abstract="false" final="false" start="8" end="52">
+  <file path="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/model" file="GoogleLabelDetectorImpl.php" realpath="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/model/GoogleLabelDetectorImpl.php" size="1360" time="2020-03-27T09:15:54+00:00" unixtime="1585300554" sha1="a575498218850520cdc2072717f633fb3002ccde" relative="model/GoogleLabelDetectorImpl.php"/>
+  <docblock>
+    <description compact="This class is designed to manage an instance of GoogleLabelDetector"/>
+  </docblock>
   <implements full="ILabelDetector" namespace="" name="ILabelDetector"/>
-  <constructor name="__construct" start="9" end="9" abstract="false" final="false" static="false" visibility="public"/>
-  <method name="MakeAnalysisRequest" start="19" end="37" abstract="false" final="false" static="false" visibility="public">
+  <constructor name="__construct" start="15" end="15" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This constructor returns a new GoogleLabelDector's instance"/>
+    </docblock>
+  </constructor>
+  <method name="MakeAnalysisRequest" start="25" end="43" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description compact="This function will get the labels and return to json array"/>
       <param type="object" variable="$imageUri">
@@ -23,7 +30,7 @@
     <parameter name="maxLabels" byreference="false" type="integer" default="1"/>
     <parameter name="minConfidence" byreference="false" type="integer" default="80"/>
   </method>
-  <method name="ToString" start="42" end="44" abstract="false" final="false" static="false" visibility="public">
+  <method name="ToString" start="48" end="50" abstract="false" final="false" static="false" visibility="public">
     <docblock>
       <description/>
       <return type="object">

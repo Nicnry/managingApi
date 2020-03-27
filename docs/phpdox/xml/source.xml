@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <source xmlns="http://xml.phpdox.net/src">
-  <dir name="C:/Users/junod/GitHub/managingApi">
+  <dir name="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi">
     <dir name="interface">
-      <file name="IBucketManager.php" size="256" time="2020-03-19T11:13:07+00:00" unixtime="1584616387" sha1="be8ae2f52da94a16e4c47f5cc4a3c7ea3954f6fe" xml="tokens/interface/IBucketManager.php.xml"/>
-      <file name="ILabelDetector.php" size="765" time="2020-03-19T11:13:07+00:00" unixtime="1584616387" sha1="b3caa7b76925176abcc3157c6ad98081fa602cf8" xml="tokens/interface/ILabelDetector.php.xml"/>
+      <file name="ILabelDetector.php" size="403" time="2020-03-27T09:15:25+00:00" unixtime="1585300525" sha1="9ba5b34462c22e11e1d7112838c54aef50edc5c1" xml="tokens/interface/ILabelDetector.php.xml"/>
+      <file name="IBucketManager.php" size="904" time="2020-03-27T09:15:29+00:00" unixtime="1585300529" sha1="7c90456908e28b0c438cc757a953d1ffbeb4a0a9" xml="tokens/interface/IBucketManager.php.xml"/>
     </dir>
-    <dir name="model">
-      <file name="GoogleLabelDetectorImpl.php" size="1367" time="2020-03-19T12:35:35+00:00" unixtime="1584621335" sha1="e47a126552466359da6ba699926152a5ee50caaf" xml="tokens/model/GoogleLabelDetectorImpl.php.xml"/>
-      <file name="GoogleLabelDetectorUnitTest.php" size="2967" time="2020-03-19T13:49:38+00:00" unixtime="1584625778" sha1="272e3f520148240200fc437b2295d1d859fec450" xml="tokens/model/GoogleLabelDetectorUnitTest.php.xml"/>
+    <dir name="Test">
+      <file name="GoogleBucketManagerImplTest.php" size="5496" time="2020-03-27T09:16:53+00:00" unixtime="1585300613" sha1="f9d4a5fef7744b0c1b97e9a4a6ff454f88b3ddc7" xml="tokens/Test/GoogleBucketManagerImplTest.php.xml"/>
+      <file name="GoogleLabelDetectorImplTest.php" size="2688" time="2020-03-27T09:17:57+00:00" unixtime="1585300677" sha1="77ca0db622aa6b624cd3a94597bcb0a2ae39f701" xml="tokens/Test/GoogleLabelDetectorImplTest.php.xml"/>
     </dir>
     <dir name="public">
-      <file name="index.php" size="313" time="2020-03-19T12:35:46+00:00" unixtime="1584621346" sha1="212715011c234c8d033e092336891fdd8c4b2984" xml="tokens/public/index.php.xml"/>
+      <file name="index.php" size="1119" time="2020-03-27T09:21:24+00:00" unixtime="1585300884" sha1="83551c5ab6eabdcaadf543d9982a42bd3b2dfdf2" xml="tokens/public/index.php.xml"/>
+    </dir>
+    <dir name="model">
+      <file name="GoogleBucketManagerImpl.php" size="3535" time="2020-03-27T09:15:33+00:00" unixtime="1585300533" sha1="e60e99c59816ddb314eb69251cf790908c80997f" xml="tokens/model/GoogleBucketManagerImpl.php.xml"/>
+      <file name="GoogleLabelDetectorImpl.php" size="1360" time="2020-03-27T09:15:54+00:00" unixtime="1585300554" sha1="a575498218850520cdc2072717f633fb3002ccde" xml="tokens/model/GoogleLabelDetectorImpl.php.xml"/>
     </dir>
   </dir>
 </source>

@@ -6,6 +6,7 @@ require __DIR__.'/../model/GoogleBucketManagerImpl.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__.'/..');
 $dotenv->load();
 echo "Silence is Golden";
+
 // Some manual tests
 // $google = new GoogleLabelDetectorImpl();
 // $google->MakeAnalysisRequest('./assets/saturnV.jpg');

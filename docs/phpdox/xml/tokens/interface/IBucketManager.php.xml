@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="C:/Users/junod/GitHub/managingApi/interface" file="IBucketManager.php" realpath="C:/Users/junod/GitHub/managingApi/interface/IBucketManager.php" size="256" time="2020-03-19T11:13:07+00:00" unixtime="1584616387" sha1="be8ae2f52da94a16e4c47f5cc4a3c7ea3954f6fe" relative="interface/IBucketManager.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/interface" file="IBucketManager.php" realpath="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/interface/IBucketManager.php" size="904" time="2020-03-27T09:15:29+00:00" unixtime="1585300529" sha1="7c90456908e28b0c438cc757a953d1ffbeb4a0a9" relative="interface/IBucketManager.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
@@ -16,6 +16,28 @@
   <line no="5"/>
   <line no="6">
     <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT">     * This function will Create an object in specific bucket or create the bucket</token>
+  </line>
+  <line no="8">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT">     * @param String $objectUrl</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT">     * @param String $filePath default : empty</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT">     * @return Void</token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="13">
+    <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_FUNCTION">function</token>
@@ -23,11 +45,37 @@
     <token name="T_STRING">CreateObject</token>
     <token name="T_PHPDOX_OPEN_BRACKET">(</token>
     <token name="T_VARIABLE">$objectUrl</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$filePath</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="7"/>
-  <line no="8">
+  <line no="14"/>
+  <line no="15">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT">     * This function will check if the bucket exist</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="18">
+    <token name="T_DOC_COMMENT">     * @param String $objectUrl</token>
+  </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT">     * @return Boolean</token>
+  </line>
+  <line no="20">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="21">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -39,8 +87,30 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="9"/>
-  <line no="10">
+  <line no="22"/>
+  <line no="23">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="24">
+    <token name="T_DOC_COMMENT">     * This function will download specific object in specific path</token>
+  </line>
+  <line no="25">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="26">
+    <token name="T_DOC_COMMENT">     * @param String $objectUrl</token>
+  </line>
+  <line no="27">
+    <token name="T_DOC_COMMENT">     * @param String $destinationUri</token>
+  </line>
+  <line no="28">
+    <token name="T_DOC_COMMENT">     * @return Void</token>
+  </line>
+  <line no="29">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="30">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -55,8 +125,27 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="11"/>
-  <line no="12">
+  <line no="31"/>
+  <line no="32">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT">     * This function will remove object from a bucket</token>
+  </line>
+  <line no="34">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="35">
+    <token name="T_DOC_COMMENT">     * @param String $objectUrl</token>
+  </line>
+  <line no="36">
+    <token name="T_DOC_COMMENT">     * @return Void</token>
+  </line>
+  <line no="37">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="38">
     <token name="T_WHITESPACE">    </token>
     <token name="T_PUBLIC">public</token>
     <token name="T_WHITESPACE"> </token>
@@ -68,7 +157,7 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="13">
+  <line no="39">
     <token name="T_PHPDOX_CLOSE_CURLY">}</token>
   </line>
 </source>

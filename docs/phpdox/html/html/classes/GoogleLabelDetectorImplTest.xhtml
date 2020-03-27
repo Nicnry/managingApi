@@ -2,7 +2,7 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <title>phpDox - IBucketManager</title>
+    <title>phpDox - GoogleLabelDetectorImplTest</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
   </head>
@@ -36,9 +36,9 @@
             <a href="../index.xhtml">Overview</a>
           </li>
           <li class="separator">
-            <a href="../interfaces.xhtml">Interfaces</a>
+            <a href="../classes.xhtml">Classes</a>
           </li>
-          <li class="separator">IBucketManager</li>
+          <li class="separator">GoogleLabelDetectorImplTest</li>
         </ul>
       </div>
       <nav class="box">
@@ -50,41 +50,44 @@
             <a href="#synopsis">Synopsis</a>
           </li>
           <li>
-            <a href="#violations">Violations</a>
+            <a href="#hierarchy">Hierarchy</a>
           </li>
           <li>
             <a href="#methods">Methods</a>
           </li>
           <li>
-            <a href="../source/interface/IBucketManager.php.xhtml#line3">Source</a>
+            <a href="../source/Test/GoogleLabelDetectorImplTest.php.xhtml#line13">Source</a>
           </li>
         </ul>
       </nav>
       <section>
-        <h1 id="introduction"><small>\</small>IBucketManager</h1>
-        <h4/>
+        <h1 id="introduction"><small>\</small>GoogleLabelDetectorImplTest</h1>
+        <h4>This test class is designed to confirm the LabelDetector class's behavior</h4>
         <p/>
+        <ul/>
         <h2 id="synopsis">Synopsis</h2>
-        <div class="synopsis">interface IBucketManager
-            {<br/><ul class="none"><li>// methods</li><li>public Void <a title="IBucketManager" href="../interfaces/IBucketManager/CreateObject.xhtml">CreateObject</a>()
-                    </li><li>public Boolean <a title="IBucketManager" href="../interfaces/IBucketManager/IsObjectExists.xhtml">IsObjectExists</a>()
-                    </li><li>public Void <a title="IBucketManager" href="../interfaces/IBucketManager/DownloadObject.xhtml">DownloadObject</a>()
-                    </li><li>public Void <a title="IBucketManager" href="../interfaces/IBucketManager/RemoveObject.xhtml">RemoveObject</a>()
+        <div class="synopsis">class GoogleLabelDetectorImplTest
+                extends TestCase
+            {<br/><ul class="none"><li>// methods</li><li>public void <a title="GoogleLabelDetectorImplTest" href="../classes/GoogleLabelDetectorImplTest/testMakeAnalysisLocalFileSuccess.xhtml">testMakeAnalysisLocalFileSuccess</a>()
+                    </li><li>public void <a title="GoogleLabelDetectorImplTest" href="../classes/GoogleLabelDetectorImplTest/testMakeAnalysisBucketObjectSuccess.xhtml">testMakeAnalysisBucketObjectSuccess</a>()
                     </li></ul>
 
             }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Extends</h4>
+          <ul>
+            <li>PHPUnit\Framework\TestCase</li>
+          </ul>
+        </div>
         <h2 id="methods">Methods</h2>
         <div class="styled">
           <h4>public</h4>
           <ul>
-            <li id="CreateObject"><a title="IBucketManager" href="../interfaces/IBucketManager/CreateObject.xhtml">CreateObject()</a>
-                — This function will Create an object in specific bucket or create the bucket</li>
-            <li id="DownloadObject"><a title="IBucketManager" href="../interfaces/IBucketManager/DownloadObject.xhtml">DownloadObject()</a>
-                — This function will download specific object in specific path</li>
-            <li id="IsObjectExists"><a title="IBucketManager" href="../interfaces/IBucketManager/IsObjectExists.xhtml">IsObjectExists()</a>
-                — This function will check if the bucket exist</li>
-            <li id="RemoveObject"><a title="IBucketManager" href="../interfaces/IBucketManager/RemoveObject.xhtml">RemoveObject()</a>
-                — This function will remove object from a bucket</li>
+            <li id="testMakeAnalysisBucketObjectSuccess"><a title="GoogleLabelDetectorImplTest" href="../classes/GoogleLabelDetectorImplTest/testMakeAnalysisBucketObjectSuccess.xhtml">testMakeAnalysisBucketObjectSuccess()</a>
+                — This test method checks the MakeAnalysis'answer when we try to analyze a data object presents on a bucket</li>
+            <li id="testMakeAnalysisLocalFileSuccess"><a title="GoogleLabelDetectorImplTest" href="../classes/GoogleLabelDetectorImplTest/testMakeAnalysisLocalFileSuccess.xhtml">testMakeAnalysisLocalFileSuccess()</a>
+                — This test method checks the MakeAnalysis'answer when we try to analyze a local file</li>
           </ul>
         </div>
       </section>

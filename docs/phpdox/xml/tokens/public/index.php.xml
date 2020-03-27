@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="C:/Users/junod/GitHub/managingApi/public" file="index.php" realpath="C:/Users/junod/GitHub/managingApi/public/index.php" size="313" time="2020-03-19T12:35:46+00:00" unixtime="1584621346" sha1="212715011c234c8d033e092336891fdd8c4b2984" relative="public/index.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/public" file="index.php" realpath="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/public/index.php" size="1119" time="2020-03-27T09:21:24+00:00" unixtime="1585300884" sha1="83551c5ab6eabdcaadf543d9982a42bd3b2dfdf2" relative="public/index.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
@@ -22,6 +22,14 @@
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
   <line no="5">
+    <token name="T_REQUIRE">require</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DIR">__DIR__</token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/../model/GoogleBucketManagerImpl.php'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="6">
     <token name="T_VARIABLE">$dotenv</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
@@ -38,7 +46,7 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="6">
+  <line no="7">
     <token name="T_VARIABLE">$dotenv</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
     <token name="T_STRING">load</token>
@@ -46,37 +54,73 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="7"/>
   <line no="8">
-    <token name="T_VARIABLE">$google</token>
+    <token name="T_ECHO">echo</token>
     <token name="T_WHITESPACE"> </token>
-    <token name="T_PHPDOX_EQUAL">=</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_NEW">new</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_STRING">GoogleLabelDetectorImpl</token>
-    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"Silence is Golden"</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
   <line no="9">
-    <token name="T_VARIABLE">$google</token>
-    <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">MakeAnalysisRequest</token>
-    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_CONSTANT_ENCAPSED_STRING">'./assets/saturnV.jpg'</token>
-    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
-    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_COMMENT">// Some manual tests</token>
   </line>
   <line no="10">
-    <token name="T_ECHO">echo</token>
-    <token name="T_WHITESPACE"> </token>
-    <token name="T_VARIABLE">$google</token>
-    <token name="T_OBJECT_OPERATOR">-&gt;</token>
-    <token name="T_STRING">ToString</token>
-    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
-    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
-    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_COMMENT">// $google = new GoogleLabelDetectorImpl();</token>
   </line>
-  <line no="11"/>
+  <line no="11">
+    <token name="T_COMMENT">// $google-&gt;MakeAnalysisRequest('./assets/saturnV.jpg');</token>
+  </line>
+  <line no="12">
+    <token name="T_COMMENT">// echo $google-&gt;ToString();</token>
+  </line>
+  <line no="13"/>
+  <line no="14"/>
+  <line no="15">
+    <token name="T_COMMENT">// // Connect to the bucket</token>
+  </line>
+  <line no="16">
+    <token name="T_COMMENT">// $projectId = getenv('PROJECT_ID');</token>
+  </line>
+  <line no="17">
+    <token name="T_COMMENT">// $domain = 'actualit.info';</token>
+  </line>
+  <line no="18">
+    <token name="T_COMMENT">// $bucketName = 'bucket_ajd_nhy';</token>
+  </line>
+  <line no="19">
+    <token name="T_COMMENT">// $objectUrl = "Loutre.jpg";</token>
+  </line>
+  <line no="20">
+    <token name="T_COMMENT">// $filePath = realpath("./assets/saturnV.jpg");</token>
+  </line>
+  <line no="21">
+    <token name="T_COMMENT">// $destinationUri = realpath("./assets") . "/" . "uploadedfile.jpg";</token>
+  </line>
+  <line no="22"/>
+  <line no="23">
+    <token name="T_COMMENT">// $bucket = new GoogleBucketManagerImpl($projectId, $domain, $bucketName);</token>
+  </line>
+  <line no="24"/>
+  <line no="25">
+    <token name="T_COMMENT">// echo $bucket-&gt;CreateObject($bucketName);</token>
+  </line>
+  <line no="26">
+    <token name="T_COMMENT">// var_dump($bucket-&gt;IsObjectExists("picture_ajd_nhy.jpg"));</token>
+  </line>
+  <line no="27">
+    <token name="T_COMMENT">// $bucket-&gt;RemoveObject($bucketName);</token>
+  </line>
+  <line no="28"/>
+  <line no="29">
+    <token name="T_COMMENT">// echo $bucket-&gt;CreateObject($objectUrl, $filePath);</token>
+  </line>
+  <line no="30">
+    <token name="T_COMMENT">// var_dump($bucket-&gt;IsObjectExists($objectUrl));</token>
+  </line>
+  <line no="31">
+    <token name="T_COMMENT">// $bucket-&gt;DownloadObject($objectUrl, $destinationUri);</token>
+  </line>
+  <line no="32">
+    <token name="T_COMMENT">// $bucket-&gt;RemoveObject($objectUrl);</token>
+  </line>
+  <line no="33"/>
 </source>
