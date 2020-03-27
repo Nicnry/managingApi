@@ -16,7 +16,9 @@ class GoogleBucketManagerImpl implements IBucketManager
     /**
      * This constructor returns a new instance of GoogleBucketManagerImpl class
      *
-     * @param [String] $bucketName Url pointing on a bucket
+     * @param String $projectId
+     * @param String $domain Url pointing on a bucket
+     * @param String $bucketName name.info
      */
     public function __construct($projectId, $domain, $bucketName){
         $credentialsPath = realpath(getenv('GOOGLE_APPLICATION_CREDENTIALS')); // Gives the real path to the credentials file stored in .env
@@ -28,6 +30,13 @@ class GoogleBucketManagerImpl implements IBucketManager
         $this->client = new StorageClient($credentials);
     }
 
+    /**
+     * This function will Create an object in specific bucket or create the bucket
+     *
+     * @param String $objectUrl
+     * @param String $filePath default : empty
+     * @return Void
+     */
     public function CreateObject($objectUrl, $filePath = "") {
         $isBucketExists = $this->IsObjectExists($this->bucketUrl);
         if(!$isBucketExists)
@@ -47,6 +56,12 @@ class GoogleBucketManagerImpl implements IBucketManager
         }
     }
 
+    /**
+     * This function will check if the bucket exist
+     *
+     * @param String $objectUrl
+     * @return Boolean
+     */
     public function IsObjectExists($objectUrl) {
         $buckets = $this->client->buckets([$this->projectId]);
         foreach($buckets as $bucket) {
@@ -67,11 +82,24 @@ class GoogleBucketManagerImpl implements IBucketManager
         return false;
     }
 
+    /**
+     * This function will download specific object in specific path
+     *
+     * @param String $objectUrl
+     * @param String $destinationUri
+     * @return Void
+     */
     public function DownloadObject($objectUrl, $destinationUri) {
         $object = $this->GetBucket()->object($objectUrl);
         $object->DownloadToFile($destinationUri);
     }
 
+    /**
+     * This function will remove object from a bucket
+     *
+     * @param String $objectUrl
+     * @return Void
+     */
     public function RemoveObject($objectUrl) {
         $object = $this->GetBucket()->object($objectUrl);
         $object->delete();

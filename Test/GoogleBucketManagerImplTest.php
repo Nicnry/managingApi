@@ -15,10 +15,7 @@ class GoogleBucketManagerImplTest extends TestCase
     private $bucketManager;
     private $domain;
     private $bucketName;
-    private $bucketUrl;
-    private $pathToTestFolder;
     private $fullPathToImage;
-    private $prefixObjectDownloaded;
     private $projectId;
 
     /**
@@ -46,7 +43,6 @@ class GoogleBucketManagerImplTest extends TestCase
         $this->assertFalse($this->bucketManager->IsObjectExists($this->bucketName));
 
         //when
-        /* Asynch, à check */
         $this->bucketManager->CreateObject($this->bucketName);
 
         //then
@@ -62,14 +58,15 @@ class GoogleBucketManagerImplTest extends TestCase
         //given
         $fileName = $this->imageName;
         $objectUrl = $this->fullPathToImage;
+
         /* Async */
         $this->bucketManager->CreateObject($this->bucketName);
         $this->assertTrue($this->bucketManager->IsObjectExists($this->bucketName));
         $this->assertFalse($this->bucketManager->IsObjectExists($fileName));
 
         //when
-        /* Async */
         $this->bucketManager->CreateObject($fileName, $objectUrl);
+
         //then
         $this->assertTrue($this->bucketManager->IsObjectExists($fileName));
     }
@@ -83,10 +80,7 @@ class GoogleBucketManagerImplTest extends TestCase
         $fileName = $this->imageName;
         $objectUrl = $this->fullPathToImage;
         $destinationFullPath = realpath("./public/assets") . "/" . $this->imageName;
-
-        /* Async */
         $this->bucketManager->CreateObject($fileName, $objectUrl);
-
         $this->assertTrue($this->bucketManager->IsObjectExists($fileName));
 
         //when
@@ -104,8 +98,6 @@ class GoogleBucketManagerImplTest extends TestCase
         // given
         $fileName = $this->imageName;
         $objectUrl = $this->fullPathToImage;
-
-        /* Async */
 
         //when
         $this->bucketManager->CreateObject($fileName, $objectUrl);
@@ -176,21 +168,5 @@ class GoogleBucketManagerImplTest extends TestCase
         {
             unlink($imageFullPath);
         }
-        
-
-        // //TODO remove all dev bucket
-        // $destinationFullPath = $this->pathToTestFolder . "//" . $this->prefixObjectDownloaded . "*";
-
-        // if (file_exists($destinationFullPath))
-        // {
-        //     unlink($destinationFullPath);
-        // }
-
-        // $this->bucketManager = new GoogleBucketManagerImpl($this->projectId, $this->domain, $this->bucketName);
-        // if ($this->bucketManager->IsObjectExists($this->bucketUrl))
-        // {
-        //     /* await syntax, to check */
-        //     $this->bucketManager->RemoveObject($this->bucketUrl);
-        // }
     }
 }

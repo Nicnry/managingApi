@@ -26,7 +26,6 @@ class GoogleLabelDetectorImplTest extends TestCase
      */
     protected function setUp(): void
     {
-        //TODO: Use expected.json instead of our_expected.json, when the format will be fixed
         $this->labelDetector = new GoogleLabelDetectorImpl();
         $this->fullPathToImage = realpath('./public/assets/saturnV.jpg');
         $this->fullPathToExpectedJson = realpath('./public/assets/our_expected.json');
@@ -49,7 +48,6 @@ class GoogleLabelDetectorImplTest extends TestCase
         $this->labelDetector->MakeAnalysisRequest($this->imageUri);
         
         //then
-        //compare expected json with result json
         $actualJson = $this->labelDetector->ToString();
         $this->assertEquals($expectedJson, $actualJson);
     }
@@ -71,7 +69,6 @@ class GoogleLabelDetectorImplTest extends TestCase
         $this->labelDetector->MakeAnalysisRequest($this->imageUri);
         
         //then
-        //compare expected json with result json
         $actualJson = $this->labelDetector->ToString();
         $this->assertEquals($expectedJson, $actualJson);
     }

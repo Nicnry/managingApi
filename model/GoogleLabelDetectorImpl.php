@@ -48,8 +48,5 @@ class GoogleLabelDetectorImpl implements ILabelDetector
     public function ToString() {
         return json_encode($this->labels);
     }
-
-    private function GetImageAsByteArray($imageFilePath) {
-        return null;
-    }
+    
 }
