@@ -21,7 +21,15 @@ $filePath = realpath("./assets/saturnV.jpg");
 $destinationUri = realpath("./assets") . "/" . "uploadedfile.jpg";
 
 $bucket = new GoogleBucketManagerImpl($projectId, $domain, $bucketName);
+
+// Bucket
+// echo $bucket->CreateObject($bucketName);
+// var_dump($bucket->IsObjectExists($bucketName));
+$bucket->RemoveObject($bucketName);
+
+
+// File
 // echo $bucket->CreateObject($objectUrl, $filePath);
-// var_dump($bucket->IsObjectExists("Loutre.jpg"));
+// var_dump($bucket->IsObjectExists("$objectUrl"));
 // $bucket->DownloadObject($objectUrl, $destinationUri);
 // $bucket->RemoveObject('Loutre.jpg');

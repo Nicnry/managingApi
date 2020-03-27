@@ -43,14 +43,14 @@ class GoogleBucketManagerImplTest extends TestCase
     public function testCreateObjectCreateNewBucketSuccess()
     {
         //given
-        $this->assertFalse($this->bucketManager->IsObjectExists($this->bucketUrl));
+        $this->assertFalse($this->bucketManager->IsObjectExists($this->bucketName));
 
         //when
         /* Asynch, à check */
-        $this->bucketManager->CreateObject($this->bucketUrl);
+        $this->bucketManager->CreateObject($this->bucketName);
 
         //then
-        $this->assertTrue($this->bucketManager->sObjectExists($this->bucketUrl));
+        $this->assertTrue($this->bucketManager->IsObjectExists($this->bucketName));
     }
 
     /**
@@ -156,6 +156,8 @@ class GoogleBucketManagerImplTest extends TestCase
      */
     protected function tearDown(): void
     {
+        $this->bucketManager->RemoveObject($this->bucketName);
+
         // //TODO remove all dev bucket
         // $destinationFullPath = $this->pathToTestFolder . "//" . $this->prefixObjectDownloaded . "*";
 
