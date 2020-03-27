@@ -120,7 +120,11 @@ class GoogleBucketManagerImplTest extends TestCase
      */
     public function testIsObjectExistsObjectNotExistBucketSuccess()
     {
-        
+         //given
+         $notExistingBucket = "notExistingBucket";      
+
+         //then
+         $this->assertFalse($this->bucketManager->IsObjectExists($notExistingBucket));
     }
 
     /**
@@ -129,7 +133,11 @@ class GoogleBucketManagerImplTest extends TestCase
      */
     public function testIsObjectExistsObjectNotExistFileSuccess()
     {
+         //given
+         $notExistingFile = "notExistingFile.jpg";
 
+         //then
+         $this->assertFalse($this->bucketManager->IsObjectExists($notExistingFile));
     }
 
     /**
