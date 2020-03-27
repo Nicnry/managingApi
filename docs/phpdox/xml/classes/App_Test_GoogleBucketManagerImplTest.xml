@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Test\GoogleBucketManagerImplTest" namespace="App\Test" name="GoogleBucketManagerImplTest" abstract="false" final="false" start="16" end="175">
+  <file path="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/Test" file="GoogleBucketManagerImplTest.php" realpath="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/Test/GoogleBucketManagerImplTest.php" size="5567" time="2020-03-27T11:25:52+00:00" unixtime="1585308352" sha1="d5adefbc0063025c671f4d1fea44c907e02d2603" relative="Test/GoogleBucketManagerImplTest.php"/>
+  <docblock>
+    <description compact="This test class is designed to confirm the GoogleBucketManager class's behavior"/>
+  </docblock>
+  <extends full="PHPUnit\Framework\TestCase" namespace="PHPUnit\Framework" name="TestCase" unresolved="true"/>
+  <method name="testCreateObjectCreateNewBucketSuccess" start="43" end="53" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This test method checks the method in charge of creating a new object We try to create a new bucket"/>
+    </docblock>
+    <inline>
+      <comment value="given" line="45"/>
+      <comment value="when" line="48"/>
+      <comment value="then" line="51"/>
+    </inline>
+  </method>
+  <method name="testCreateObjectCreateNewFileSuccess" start="59" end="75" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This test method checks the method in charge of creating a new object We try to create a file in an existing bucket"/>
+    </docblock>
+    <inline>
+      <comment value="given" line="61"/>
+      <comment value="Async" line="65"/>
+      <comment value="when" line="70"/>
+      <comment value="then" line="73"/>
+    </inline>
+  </method>
+  <method name="testDownloadObjectNominalCaseSuccess" start="80" end="94" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This test method checks the method in charge of uploading item in an existing bucket"/>
+    </docblock>
+    <inline>
+      <comment value="given" line="82"/>
+      <comment value="when" line="89"/>
+      <comment value="then" line="92"/>
+    </inline>
+  </method>
+  <method name="testIsObjectExistsNominalCaseSuccess" start="99" end="110" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This test method checks the method in charge of testing the existence of an object"/>
+    </docblock>
+    <inline>
+      <comment value="given" line="101"/>
+      <comment value="when" line="105"/>
+      <comment value="then" line="108"/>
+    </inline>
+  </method>
+  <method name="testIsObjectExistsObjectNotExistBucketSuccess" start="116" end="123" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This test method checks the method in charge of testing the existence of an object When the object doesn't exist (object is the bucket)"/>
+    </docblock>
+    <inline>
+      <comment value="given" line="118"/>
+      <comment value="then" line="121"/>
+    </inline>
+  </method>
+  <method name="testIsObjectExistsObjectNotExistFileSuccess" start="129" end="136" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This test method checks the method in charge of testing the existence of an object When the object doesn't exist (object is the file in an existing bucket)"/>
+    </docblock>
+    <inline>
+      <comment value="given" line="131"/>
+      <comment value="then" line="134"/>
+    </inline>
+  </method>
+  <method name="testRemoveObjectNominalCaseSuccess" start="141" end="154" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This test method checks the method in charge of removing an existing object"/>
+    </docblock>
+    <inline>
+      <comment value="given" line="143"/>
+      <comment value="Async" line="145"/>
+      <comment value="when" line="149"/>
+      <comment value="then" line="152"/>
+    </inline>
+  </method>
+</class>

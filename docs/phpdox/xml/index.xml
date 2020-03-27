@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <index xmlns="http://xml.phpdox.net/src" basedir="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi">
-  <namespace name="">
-    <interface name="ILabelDetector" src="interface/ILabelDetector.php" xml="interfaces/ILabelDetector.xml"/>
-    <interface name="IBucketManager" src="interface/IBucketManager.php" xml="interfaces/IBucketManager.xml"/>
-    <class name="GoogleBucketManagerImplTest" src="Test/GoogleBucketManagerImplTest.php" description="This test class is designed to confirm the GoogleBucketManager class's behavior" xml="classes/GoogleBucketManagerImplTest.xml"/>
-    <class name="GoogleLabelDetectorImplTest" src="Test/GoogleLabelDetectorImplTest.php" description="This test class is designed to confirm the LabelDetector class's behavior" xml="classes/GoogleLabelDetectorImplTest.xml"/>
-    <class name="GoogleBucketManagerImpl" src="model/GoogleBucketManagerImpl.php" description="This class is designed to manage an instance of GoogleBucketManager" xml="classes/GoogleBucketManagerImpl.xml"/>
-    <class name="GoogleLabelDetectorImpl" src="model/GoogleLabelDetectorImpl.php" description="This class is designed to manage an instance of GoogleLabelDetector" xml="classes/GoogleLabelDetectorImpl.xml"/>
+  <namespace name="App\Inteface">
+    <interface name="ILabelDetector" src="interface/ILabelDetector.php" xml="interfaces/App_Inteface_ILabelDetector.xml"/>
+    <interface name="IBucketManager" src="interface/IBucketManager.php" xml="interfaces/App_Inteface_IBucketManager.xml"/>
+  </namespace>
+  <namespace name="App\Test">
+    <class name="GoogleBucketManagerImplTest" src="Test/GoogleBucketManagerImplTest.php" description="This test class is designed to confirm the GoogleBucketManager class's behavior" xml="classes/App_Test_GoogleBucketManagerImplTest.xml"/>
+    <class name="GoogleLabelDetectorImplTest" src="Test/GoogleLabelDetectorImplTest.php" description="This test class is designed to confirm the LabelDetector class's behavior" xml="classes/App_Test_GoogleLabelDetectorImplTest.xml"/>
+  </namespace>
+  <namespace name="App\Model">
+    <class name="GoogleBucketManagerImpl" src="model/GoogleBucketManagerImpl.php" description="This class is designed to manage an instance of GoogleBucketManager" xml="classes/App_Model_GoogleBucketManagerImpl.xml"/>
+    <class name="GoogleLabelDetectorImpl" src="model/GoogleLabelDetectorImpl.php" description="This class is designed to manage an instance of GoogleLabelDetector" xml="classes/App_Model_GoogleLabelDetectorImpl.xml"/>
   </namespace>
 </index>

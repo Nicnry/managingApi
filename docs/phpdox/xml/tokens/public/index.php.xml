@@ -1,11 +1,32 @@
 <?xml version="1.0"?>
 <source xmlns="http://xml.phpdox.net/token">
-  <file xmlns="http://xml.phpdox.net/src" path="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/public" file="index.php" realpath="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/public/index.php" size="1235" time="2020-03-27T10:26:32+00:00" unixtime="1585304792" sha1="cf449df3db302a0a2758ed6036e0dda1b8a0182e" relative="public/index.php"/>
+  <file xmlns="http://xml.phpdox.net/src" path="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/public" file="index.php" realpath="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/public/index.php" size="1314" time="2020-03-27T11:22:04+00:00" unixtime="1585308124" sha1="cf4f9779c7812cd5c65ea1cf8edb70daf2ef5236" relative="public/index.php"/>
   <line no="1">
     <token name="T_OPEN_TAG">&lt;?php</token>
   </line>
   <line no="2"/>
   <line no="3">
+    <token name="T_USE">use</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">App</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Model</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">GoogleBucketManagerImpl</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4">
+    <token name="T_USE">use</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">App</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Model</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">GoogleLabelDetectorImpl</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="5"/>
+  <line no="6">
     <token name="T_REQUIRE">require</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_DIR">__DIR__</token>
@@ -13,7 +34,7 @@
     <token name="T_CONSTANT_ENCAPSED_STRING">'/../vendor/autoload.php'</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="4">
+  <line no="7">
     <token name="T_REQUIRE">require</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_DIR">__DIR__</token>
@@ -21,7 +42,7 @@
     <token name="T_CONSTANT_ENCAPSED_STRING">'/../model/GoogleLabelDetectorImpl.php'</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="5">
+  <line no="8">
     <token name="T_REQUIRE">require</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_DIR">__DIR__</token>
@@ -29,7 +50,7 @@
     <token name="T_CONSTANT_ENCAPSED_STRING">'/../model/GoogleBucketManagerImpl.php'</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="6">
+  <line no="9">
     <token name="T_VARIABLE">$dotenv</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
@@ -46,7 +67,7 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="7">
+  <line no="10">
     <token name="T_VARIABLE">$dotenv</token>
     <token name="T_OBJECT_OPERATOR">-&gt;</token>
     <token name="T_STRING">load</token>
@@ -54,24 +75,24 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="8">
+  <line no="11">
     <token name="T_ECHO">echo</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_CONSTANT_ENCAPSED_STRING">"Silence is Golden&lt;/br&gt;"</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="9"/>
-  <line no="10">
+  <line no="12"/>
+  <line no="13">
     <token name="T_ECHO">echo</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_CONSTANT_ENCAPSED_STRING">'&lt;a href="./assets/docs/phpdox/html/html/index.xhtml"&gt;Documentation de classe&lt;/a&gt;'</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="11"/>
-  <line no="12">
+  <line no="14"/>
+  <line no="15">
     <token name="T_COMMENT">// Detect labels for saternV.jpg</token>
   </line>
-  <line no="13">
+  <line no="16">
     <token name="T_VARIABLE">$google</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
@@ -83,22 +104,22 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="14"/>
-  <line no="15">
+  <line no="17"/>
+  <line no="18">
     <token name="T_COMMENT">// Labels</token>
   </line>
-  <line no="16">
+  <line no="19">
     <token name="T_COMMENT">// $google-&gt;MakeAnalysisRequest('./assets/saturnV.jpg');</token>
   </line>
-  <line no="17">
+  <line no="20">
     <token name="T_COMMENT">// echo $google-&gt;ToString();</token>
   </line>
-  <line no="18"/>
-  <line no="19"/>
-  <line no="20">
+  <line no="21"/>
+  <line no="22"/>
+  <line no="23">
     <token name="T_COMMENT">// Connect to the bucket</token>
   </line>
-  <line no="21">
+  <line no="24">
     <token name="T_VARIABLE">$projectId</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
@@ -109,7 +130,7 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="22">
+  <line no="25">
     <token name="T_VARIABLE">$domain</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
@@ -117,7 +138,7 @@
     <token name="T_CONSTANT_ENCAPSED_STRING">'actualit.info'</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="23">
+  <line no="26">
     <token name="T_VARIABLE">$bucketName</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
@@ -125,7 +146,7 @@
     <token name="T_CONSTANT_ENCAPSED_STRING">'bucket_ajd_nhy'</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="24">
+  <line no="27">
     <token name="T_VARIABLE">$objectUrl</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
@@ -133,7 +154,7 @@
     <token name="T_CONSTANT_ENCAPSED_STRING">"Loutre.jpg"</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="25">
+  <line no="28">
     <token name="T_VARIABLE">$filePath</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
@@ -144,7 +165,7 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="26">
+  <line no="29">
     <token name="T_VARIABLE">$destinationUri</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
@@ -163,8 +184,8 @@
     <token name="T_CONSTANT_ENCAPSED_STRING">"uploadedfile.jpg"</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="27"/>
-  <line no="28">
+  <line no="30"/>
+  <line no="31">
     <token name="T_VARIABLE">$bucket</token>
     <token name="T_WHITESPACE"> </token>
     <token name="T_PHPDOX_EQUAL">=</token>
@@ -183,40 +204,40 @@
     <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
     <token name="T_PHPDOX_SEMICOLON">;</token>
   </line>
-  <line no="29"/>
-  <line no="30">
+  <line no="32"/>
+  <line no="33">
     <token name="T_COMMENT">// Bucket</token>
   </line>
-  <line no="31">
+  <line no="34">
     <token name="T_COMMENT">// echo $bucket-&gt;CreateObject($bucketName);</token>
   </line>
-  <line no="32">
+  <line no="35">
     <token name="T_COMMENT">// var_dump($bucket-&gt;IsObjectExists("picture_ajd_nhy.jpg"));</token>
   </line>
-  <line no="33">
+  <line no="36">
     <token name="T_COMMENT">// $bucket-&gt;RemoveObject($bucketName);</token>
   </line>
-  <line no="34"/>
-  <line no="35"/>
-  <line no="36">
+  <line no="37"/>
+  <line no="38"/>
+  <line no="39">
     <token name="T_COMMENT">// File</token>
   </line>
-  <line no="37">
+  <line no="40">
     <token name="T_COMMENT">// echo $bucket-&gt;CreateObject($objectUrl, $filePath);</token>
   </line>
-  <line no="38">
+  <line no="41">
     <token name="T_COMMENT">// var_dump($bucket-&gt;IsObjectExists($objectUrl));</token>
   </line>
-  <line no="39">
+  <line no="42">
     <token name="T_COMMENT">// $bucket-&gt;DownloadObject($objectUrl, $destinationUri);</token>
   </line>
-  <line no="40">
+  <line no="43">
     <token name="T_COMMENT">// $bucket-&gt;RemoveObject($objectUrl);</token>
   </line>
-  <line no="41"/>
-  <line no="42">
+  <line no="44"/>
+  <line no="45">
     <token name="T_CLOSE_TAG">?&gt;</token>
   </line>
-  <line no="43"/>
-  <line no="44"/>
+  <line no="46"/>
+  <line no="47"/>
 </source>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="App\Inteface\ILabelDetector" namespace="App\Inteface" name="ILabelDetector" abstract="false" final="false" start="5" end="23">
+  <file path="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/interface" file="ILabelDetector.php" realpath="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/interface/ILabelDetector.php" size="428" time="2020-03-27T11:26:31+00:00" unixtime="1585308391" sha1="17226cd8e11677019b17ca925cee71af07e5a256" relative="interface/ILabelDetector.php"/>
+  <method name="MakeAnalysisRequest" start="16" end="16" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function will get the labels and return to json array"/>
+      <param type="object" variable="$imageUri">
+        <type full="App\Inteface\String" namespace="App\Inteface" name="String"/>
+      </param>
+      <param type="object" variable="$maxLabels">
+        <type full="App\Inteface\Int" namespace="App\Inteface" name="Int"/>
+      </param>
+      <param type="object" variable="$minConfidence">
+        <type full="App\Inteface\Int" namespace="App\Inteface" name="Int"/>
+      </param>
+      <return type="object">
+        <type full="App\Inteface\Void" namespace="App\Inteface" name="Void"/>
+      </return>
+    </docblock>
+    <parameter name="imageUri" byreference="false" type="{unknown}"/>
+    <parameter name="maxLabels" byreference="false" type="integer" default="1"/>
+    <parameter name="minConfidence" byreference="false" type="integer" default="80"/>
+  </method>
+  <method name="ToString" start="21" end="21" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="App\Inteface\String" namespace="App\Inteface" name="String"/>
+      </return>
+    </docblock>
+  </method>
+  <implementors>
+    <class full="App\Model\GoogleLabelDetectorImpl" namespace="App\Model" name="GoogleLabelDetectorImpl"/>
+  </implementors>
+</interface>

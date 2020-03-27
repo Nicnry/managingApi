@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Model\GoogleLabelDetectorImpl" namespace="App\Model" name="GoogleLabelDetectorImpl" abstract="false" final="false" start="10" end="54">
+  <file path="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/model" file="GoogleLabelDetectorImpl.php" realpath="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/model/GoogleLabelDetectorImpl.php" size="1414" time="2020-03-27T11:26:12+00:00" unixtime="1585308372" sha1="984503901cf61e0f77e7f1d743f9b3ec10ddc396" relative="model/GoogleLabelDetectorImpl.php"/>
+  <docblock>
+    <description compact="This class is designed to manage an instance of GoogleLabelDetector"/>
+  </docblock>
+  <implements full="App\Inteface\ILabelDetector" namespace="App\Inteface" name="ILabelDetector"/>
+  <constructor name="__construct" start="17" end="17" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This constructor returns a new GoogleLabelDector's instance"/>
+    </docblock>
+  </constructor>
+  <method name="MakeAnalysisRequest" start="27" end="45" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function will get the labels and return to json array"/>
+      <param type="object" variable="$imageUri">
+        <type full="App\Model\String" namespace="App\Model" name="String"/>
+      </param>
+      <param type="object" variable="$maxLabels">
+        <type full="App\Model\Int" namespace="App\Model" name="Int"/>
+      </param>
+      <param type="object" variable="$minConfidence">
+        <type full="App\Model\Int" namespace="App\Model" name="Int"/>
+      </param>
+      <return type="object">
+        <type full="App\Model\Void" namespace="App\Model" name="Void"/>
+      </return>
+    </docblock>
+    <parameter name="imageUri" byreference="false" type="{unknown}"/>
+    <parameter name="maxLabels" byreference="false" type="integer" default="1"/>
+    <parameter name="minConfidence" byreference="false" type="integer" default="80"/>
+  </method>
+  <method name="ToString" start="50" end="52" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="App\Model\String" namespace="App\Model" name="String"/>
+      </return>
+    </docblock>
+  </method>
+  <interface full="App\Inteface\ILabelDetector" namespace="App\Inteface" name="ILabelDetector">
+    <method name="MakeAnalysisRequest" start="16" end="16" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="This function will get the labels and return to json array"/>
+        <param type="object" variable="$imageUri">
+          <type full="App\Inteface\String" namespace="App\Inteface" name="String"/>
+        </param>
+        <param type="object" variable="$maxLabels">
+          <type full="App\Inteface\Int" namespace="App\Inteface" name="Int"/>
+        </param>
+        <param type="object" variable="$minConfidence">
+          <type full="App\Inteface\Int" namespace="App\Inteface" name="Int"/>
+        </param>
+        <return type="object">
+          <type full="App\Inteface\Void" namespace="App\Inteface" name="Void"/>
+        </return>
+      </docblock>
+      <parameter name="imageUri" byreference="false" type="{unknown}"/>
+      <parameter name="maxLabels" byreference="false" type="integer" default="1"/>
+      <parameter name="minConfidence" byreference="false" type="integer" default="80"/>
+    </method>
+    <method name="ToString" start="21" end="21" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <return type="object">
+          <type full="App\Inteface\String" namespace="App\Inteface" name="String"/>
+        </return>
+      </docblock>
+    </method>
+  </interface>
+</class>

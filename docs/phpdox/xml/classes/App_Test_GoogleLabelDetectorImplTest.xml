@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Test\GoogleLabelDetectorImplTest" namespace="App\Test" name="GoogleLabelDetectorImplTest" abstract="false" final="false" start="16" end="88">
+  <file path="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/Test" file="GoogleLabelDetectorImplTest.php" realpath="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/Test/GoogleLabelDetectorImplTest.php" size="2759" time="2020-03-27T11:26:56+00:00" unixtime="1585308416" sha1="fc3342726343deabe0f9e33ea480d5feac9f375e" relative="Test/GoogleLabelDetectorImplTest.php"/>
+  <docblock>
+    <description compact="This test class is designed to confirm the LabelDetector class's behavior"/>
+  </docblock>
+  <extends full="PHPUnit\Framework\TestCase" namespace="PHPUnit\Framework" name="TestCase" unresolved="true"/>
+  <method name="testMakeAnalysisLocalFileSuccess" start="42" end="56" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This test method checks the MakeAnalysis'answer when we try to analyze a local file"/>
+      <return type="object">
+        <type full="App\Test\void" namespace="App\Test" name="void"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="given" line="44"/>
+      <comment value="Remove invisible characters, they're given by file_get_contents" line="47"/>
+      <comment value="Used only to be more understandable" line="48"/>
+      <comment value="when" line="50"/>
+      <comment value="then" line="53"/>
+    </inline>
+  </method>
+  <method name="testMakeAnalysisBucketObjectSuccess" start="63" end="77" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This test method checks the MakeAnalysis'answer when we try to analyze a data object presents on a bucket"/>
+      <return type="object">
+        <type full="App\Test\void" namespace="App\Test" name="void"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="given" line="65"/>
+      <comment value="Remove invisible characters, they're given by file_get_contents" line="68"/>
+      <comment value="when" line="71"/>
+      <comment value="then" line="74"/>
+    </inline>
+  </method>
+</class>

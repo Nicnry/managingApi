@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="App\Inteface\IBucketManager" namespace="App\Inteface" name="IBucketManager" abstract="false" final="false" start="5" end="41">
+  <file path="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/interface" file="IBucketManager.php" realpath="/Users/nawakine/Documents/Ecole/2eme/Semestre_1/Trim_2/RIA2/managingApi/interface/IBucketManager.php" size="929" time="2020-03-27T11:25:55+00:00" unixtime="1585308355" sha1="b0583a884bc289986b96acaec2afdbb0a9d12875" relative="interface/IBucketManager.php"/>
+  <method name="CreateObject" start="15" end="15" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function will Create an object in specific bucket or create the bucket"/>
+      <param type="object" variable="$objectUrl">
+        <type full="App\Inteface\String" namespace="App\Inteface" name="String"/>
+      </param>
+      <param description="default : empty" type="object" variable="$filePath">
+        <type full="App\Inteface\String" namespace="App\Inteface" name="String"/>
+      </param>
+      <return type="object">
+        <type full="App\Inteface\Void" namespace="App\Inteface" name="Void"/>
+      </return>
+    </docblock>
+    <parameter name="objectUrl" byreference="false" type="{unknown}"/>
+    <parameter name="filePath" byreference="false" type="string" default="&quot;&quot;"/>
+  </method>
+  <method name="IsObjectExists" start="23" end="23" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function will check if the bucket exist"/>
+      <param type="object" variable="$objectUrl">
+        <type full="App\Inteface\String" namespace="App\Inteface" name="String"/>
+      </param>
+      <return type="object">
+        <type full="App\Inteface\Boolean" namespace="App\Inteface" name="Boolean"/>
+      </return>
+    </docblock>
+    <parameter name="objectUrl" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="DownloadObject" start="32" end="32" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function will download specific object in specific path"/>
+      <param type="object" variable="$objectUrl">
+        <type full="App\Inteface\String" namespace="App\Inteface" name="String"/>
+      </param>
+      <param type="object" variable="$destinationUri">
+        <type full="App\Inteface\String" namespace="App\Inteface" name="String"/>
+      </param>
+      <return type="object">
+        <type full="App\Inteface\Void" namespace="App\Inteface" name="Void"/>
+      </return>
+    </docblock>
+    <parameter name="objectUrl" byreference="false" type="{unknown}"/>
+    <parameter name="destinationUri" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="RemoveObject" start="40" end="40" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="This function will remove object from a bucket"/>
+      <param type="object" variable="$objectUrl">
+        <type full="App\Inteface\String" namespace="App\Inteface" name="String"/>
+      </param>
+      <return type="object">
+        <type full="App\Inteface\Void" namespace="App\Inteface" name="Void"/>
+      </return>
+    </docblock>
+    <parameter name="objectUrl" byreference="false" type="{unknown}"/>
+  </method>
+  <implementors>
+    <class full="App\Model\GoogleBucketManagerImpl" namespace="App\Model" name="GoogleBucketManagerImpl"/>
+  </implementors>
+</interface>
