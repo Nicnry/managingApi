@@ -35,6 +35,16 @@ Pour executer tous les tests, il faut utiliser la commande `vendor/bin/phpunit m
 
 Il est possible d'éxécuter les test sur un modéle spécifique grâce à `vendor/bin/phpunit [folder]/[FileTest.php] --testdox`.
 
+### PHPUnit Test Explorer
+Afin d'effectuer nos différents tests, nous avons utilisé cet outil pour VS Code. Vous retrouverez les informations sur cet outils sur ce [lien](./docs/environnement.md)
+
+
+## Rendu
+Voici l'etat actuel de nos tests :
+![tests_phpunit_picture](./docs/img/tests_ria2.png)
+
+Le dernier test ne passe pas car nous n'avons pas trouvé l'uri pour notre bucket + image. Cependant, le test est opérationnel en cas de bonne uri.
+
 Développeurs :
 - Alexandre Junod
 - Nicolas Henry

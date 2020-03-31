@@ -20,3 +20,10 @@ Dans le cadre du développement, nous utilisons 2 extensions vscode pour amélio
 - google/cloud-vision ^0.25.0
 
 Vous n'avez pas besoin d'installer ces librairies pour utiliser ce projet. Pour utiliser ce projet vous pouvez toujours suivre ce [lien](../README.md) pour commencer. Si vous n'avez pas réussi à charger une librairie, vous pouver toujours essayer de la réinstaller avec l'example suivant : `composer require google/cloud-storage`
+
+## plugins
+Afin d'effectuer nos tests, nous utilisons PHPUnit Test Explorer.
+Vous pourrez l'installer en effectuant la commande suivante : `code --install-extension recca0120.vscode-phpunit` (environnement unix, sinon vous pouvez acceder directement via le marketplace en cherchant PHPUnit Test Explorer).
+Cet outil ajoute un onglet à la barre de menu à gauche avec une "fiole".
+Pour effectuer le test, il est important d'etre à la racine du projet (managingApi) et ensuite, vous pourrez lancer les tests.
+Il n'est pas possible de lancer tout les tests d'un coup, il vous faut faire cela par "groupe" de tests (ce qui correspond à chaque fichier de test.)
