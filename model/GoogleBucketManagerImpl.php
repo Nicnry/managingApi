@@ -41,6 +41,7 @@ class GoogleBucketManagerImpl implements IBucketManager
      * @return Void
      */
     public function CreateObject($objectUrl, $filePath = "") {
+        $file = "";
         $isBucketExists = $this->IsObjectExists($this->bucketUrl);
         if(!$isBucketExists)
         {
@@ -51,9 +52,13 @@ class GoogleBucketManagerImpl implements IBucketManager
             $bucket = $this->GetBucket();
         }
 
+        if($filePath != null){
+            $file = fopen($filePath, 'r');
+        }
+
         if($objectUrl != $this->bucketUrl)
         {
-            $bucket->upload($filePath, [
+            $bucket->upload($file, [
                 'name' => $objectUrl
             ]);
         }

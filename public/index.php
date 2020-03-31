@@ -40,6 +40,4 @@ $bucket = new GoogleBucketManagerImpl($projectId, $domain, $bucketName);
 // var_dump($bucket->IsObjectExists($objectUrl));
 // $bucket->DownloadObject($objectUrl, $destinationUri);
 // $bucket->RemoveObject($objectUrl);
-
 ?>
-
