@@ -35,7 +35,6 @@ $bucket = new GoogleBucketManagerImpl($projectId, $domain, $bucketName);
 // var_dump($bucket->IsObjectExists("picture_ajd_nhy.jpg"));
 // $bucket->RemoveObject($bucketName);
 
-
 // File
 // echo $bucket->CreateObject($objectUrl, $filePath);
 // var_dump($bucket->IsObjectExists($objectUrl));

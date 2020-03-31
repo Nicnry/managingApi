@@ -32,6 +32,8 @@ class GoogleLabelDetectorImplTest extends TestCase
         $this->labelDetector = new GoogleLabelDetectorImpl();
         $this->fullPathToImage = realpath('./public/assets/saturnV.jpg');
         $this->fullPathToExpectedJson = realpath('./public/assets/our_expected.json');
+        $this->bucketUrl = "bucket_ajd_nhy.actualit.info";
+        $this->imageName = "saturnV.jpg";
     }
 
     /**
@@ -67,7 +69,7 @@ class GoogleLabelDetectorImplTest extends TestCase
         $expectedJsonWithInvisibles = file_get_contents($this->fullPathToExpectedJson);
         $expectedJson = preg_replace('/\p{C}+/u', "", $expectedJsonWithInvisibles); // Remove invisible characters, they're given by file_get_contents 
         $this->imageUri = $this->bucketUrl . "/" . $this->imageName;
-        
+
         //when
         $this->labelDetector->MakeAnalysisRequest($this->imageUri);
         

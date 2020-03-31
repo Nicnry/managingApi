@@ -26,13 +26,16 @@ class GoogleLabelDetectorImpl implements ILabelDetector
      */
     public function MakeAnalysisRequest($imageUri, $maxLabels = 1, $minConfidence = 80) {
         $imageAnnotator = new ImageAnnotatorClient();
-        $image = file_get_contents($imageUri);
+
+        $image = $this->AnalysisRequestMethod($imageUri);
+
         $response = $imageAnnotator->labelDetection($image);
         $labels = $response->getLabelAnnotations();
+        $labelJson = [];
         
         if ($labels) {
             foreach ($labels as $label) {
-                $labelJson[] = $label->serializeToJsonString();
+                array_push($labelJson, $label->serializeToJsonString());
             }
         } else {
             print('No label found' . PHP_EOL);
@@ -40,7 +43,7 @@ class GoogleLabelDetectorImpl implements ILabelDetector
         }
 
         $this->labels = implode($labelJson);
-
+        
         $imageAnnotator->close();
     }
 
@@ -51,4 +54,18 @@ class GoogleLabelDetectorImpl implements ILabelDetector
         return json_encode($this->labels);
     }
     
+    /**
+     * Undocumented function
+     *
+     * @param String $imageUri Local URL or distant URL for an image
+     * @return String full path of the local image or full path of the distant image
+     */
+    private function AnalysisRequestMethod($imageUri){
+        if(file_exists($imageUri)){
+            return file_get_contents($imageUri);
+        } 
+
+        $ImageBucketUri = 'gs://' . $imageUri;
+        return $ImageBucketUri;
+    }
 }
