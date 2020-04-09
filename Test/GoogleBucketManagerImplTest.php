@@ -31,7 +31,7 @@ class GoogleBucketManagerImplTest extends TestCase
         $this->domain = "actualit.info";
         $this->bucketUrl = $this->bucketName . "." . $this->domain;
         $this->imageName = "picture_ajd_nhy.jpg";
-        $this->fullPathToImage = realpath('./public/assets/') . $this->imageName;
+        $this->fullPathToImage = realpath("./public/assets/$this->imageName");
         $this->prefixObjectDownloaded = "downloaded";
         $this->bucketManager = new GoogleBucketManagerImpl($this->projectId, $this->domain, $this->bucketName);
     }
